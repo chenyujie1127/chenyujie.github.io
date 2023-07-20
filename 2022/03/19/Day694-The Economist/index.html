@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="文章来源：《经济学人》Mar 19th 2022 期 Science &amp; technology 栏目 How to tweak drug-design software to create chemical weapons如何调整药物设计软件来制造化学武器 Chemical warfare化学战争 ![image-20220321101917562](&#x2F;Users&#x2F;ch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/03/19/Day694-The%20Economist/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="文章来源：《经济学人》Mar 19th 2022 期 Science &amp; technology 栏目 How to tweak drug-design software to create chemical weapons如何调整药物设计软件来制造化学武器 Chemical warfare化学战争 ![image-20220321101917562](&#x2F;Users&#x2F;ch">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-18T23:55:06.851Z">
+<meta property="article:modified_time" content="2022-03-21T02:19:19.702Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-0123456789ABCDEF",
+          enable_page_level_ads: true
+      });
+  </script>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "Home"; 
+
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/categories"] = "Categories"; 
+
+  themeMenus["/tags"] = "Tags"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="Hexo" rel="home"> Hexo </a>
+            
+          </h1>
+
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-Day694-The Economist" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2022/03/19/Day694-The%20Economist/" class="article-date">
+	  <time datetime="2022-03-18T23:55:06.851Z" itemprop="datePublished">March 19, 2022</time>
+	</a>
+
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>文章来源：《经济学人》Mar 19th 2022 期 Science &amp; technology 栏目</p>
+<h1 id="How-to-tweak-drug-design-software-to-create-chemical-weapons"><a href="#How-to-tweak-drug-design-software-to-create-chemical-weapons" class="headerlink" title="How to tweak drug-design software to create chemical weapons"></a>How to tweak drug-design software to create chemical weapons</h1><p>如何调整药物设计软件来制造化学武器</p>
+<h6 id="Chemical-warfare"><a href="#Chemical-warfare" class="headerlink" title="Chemical warfare"></a>Chemical warfare</h6><p>化学战争</p>
+<p>![image-20220321101917562](&#x2F;Users&#x2F;chenyujie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220321101917562.png)</p>
+<h5 id="Just-ask-the-program-to-enhance-rather-than-reduce-toxicity"><a href="#Just-ask-the-program-to-enhance-rather-than-reduce-toxicity" class="headerlink" title="Just ask the program to enhance, rather than reduce, toxicity"></a>Just ask the program to enhance, rather than reduce, toxicity</h5><p>要求程序去增强毒性，而非减少毒性</p>
+<p>Mar 19th 2022</p>
+<p>SCIENTIFIC PAPERS are normally models of discreet understatement. They are also (or are at least supposed to be) loaded with the information needed for others to replicate their findings.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">【1】 understatement 保守的陈述； 轻描淡写</span><br><span class="line">[释义] a statement that describes something in a way that makes it seem less important, serious, bad, etc. than it really is, or the act of making such statements</span><br></pre></td></tr></table></figure>
+
+<p>科学论文通常是谨慎轻描淡写的典范。他们也(或者至少应该)承载着其他人复现他们的发现所需要的信息。</p>
+<p>Not this one. “Dual use of artificial-intelligence-powered drug discovery”, just published in <em>Nature Machine Intelligence</em>, has clearly freaked its authors out. That comes over both in the tone of the text and the deliberate withholding of crucial information. For what Fabio Urbina and Sean Ekins of Collaborations Pharmaceuticals, in Raleigh, North Carolina, and their colleagues are reporting is a virtual machine that can be used to design new and nastier chemical weapons.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">【1】withhold 隐瞒</span><br></pre></td></tr></table></figure>
+
+<p>但是这篇论文不是。刚刚发表在Nature子刊《Nature Machine Intelligence》上的论文《人工智能驱动的药物发现的双重用途》(Dual - use of artificial Intelligence -powered drug discovery)显然把它的作者吓坏了。这体现在文本的基调和故意隐瞒关键信息上。位于美国北卡罗来纳州罗利的Collaborations Pharmaceuticals公司的Fabio Urbina和Sean Ekins以及他们的同事正在报道的是一种虚拟机器，可以用来设计新的、更可怕的化学武器。</p>
+<h2 id="Hiding-in-plain-sight"><a href="#Hiding-in-plain-sight" class="headerlink" title="Hiding in plain sight"></a>Hiding in plain sight</h2><p>The story began in 2021, when Collaborations Pharmaceuticals, which uses computers to help its customers identify molecules that look like potential drugs, was invited to present a paper on how such drug-discovery technologies might be misused. The venue was a conference organised by the Spiez Laboratory, in Switzerland. This is a government-funded outfit that studies risks posed by nuclear, biological and chemical weapons. To prepare for the presentation some of Collaborations’ researchers carried out what they describe as a “thought exercise” that turned into a computational proof of concept for making biochemical weapons.</p>
+<p>这个故事始于2021年，当时Collaborations Pharmaceuticals公司受邀发表了一篇关于“药物发现技术可能被滥用“的论文。该公司利用计算机帮助客户识别看似潜在药物的分子。地点是瑞士斯皮兹实验室组织的一次会议。这是一个政府资助的机构，研究核武器、生物和化学武器带来的风险。为了准备这次演讲，collaboration公司的一些研究人员进行了一项他们称之为“思考实验”的活动，通过计算证明了制造生化武器的概念。</p>
+<p>Their method was disturbingly simple. They took a piece of drug-discovery software, called MegaSyn (a piece of artificial intelligence, AI, which the company has developed for the purpose of putting virtual molecules together and then assessing their potential as medicines), and turned one of its functions upside down. Instead of penalising probable toxicity, as makes sense if a molecule is to be used medically, the modified version of MegaSyn prized it.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">【背景】在瑞士的会议上，Collaborations Pharmaceuticals 公司却决定探索如何使用 AI 来设计有毒分子。该公司之前设计了一种名为 MegaSyn 的商业 de novo 分子生成模型，借助机器学习模型预测生物活性，寻找人类疾病靶点的新治疗抑制剂。</span><br><span class="line"></span><br><span class="line">这种生成模型通常会惩罚预测的毒性并奖励预测的目标活动。之后他们进行了调整，指导模型同时奖励毒性和生物活性，并使用来自公共数据库的分子对人工智能进行训练。</span><br></pre></td></tr></table></figure>
+
+<p>他们的方法简单得令人不安。他们使用了一款名为MegaSyn的药物发现软件(这是一款人工智能软件，该公司开发它的目的是将虚拟分子组合在一起，然后评估它们作为药物的潜力)，并将其功能进行反转。如果一种分子要用于医学上，那么惩罚可能的毒性是有道理的，但修改后的MegaSyn版本是要奖励毒性。</p>
+<p>The result was terrifying. <u>Trained on the chemical structures</u> of a set of drug-like molecules (defined as substances easily synthesised and likely to be absorbed by the body) taken from a publicly available database, <u>together with those molecules’ known toxicities</u>, the modified software required a mere six hours to generate 40,000 virtual molecules that fell within the researchers’ predefined parameters for possible use as chemical weapons.</p>
+<p>结果是可怕的。通过对从公开数据库中提取的一组类药分子(定义为易于合成并容易被身体吸收的物质)的化学结构以及这些分子的已知毒性进行训练，修改后的软件仅需6小时就能生成40000个虚拟分子，这些分子符合研究人员预定义的参数，可能用作化学武器。</p>
+<p>The list included many known nerve agents, notably VX, one of the most toxic. But the software also came up with not-yet-synthesised substances predicted to be deadlier still. Worryingly, some of them occupied parts of what chemists call “molecular property space” that were entirely separate from those inhabited by known neurotoxins. This suggests that whole, new classes of chemical weapons might be developed, if anyone wished to try.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">【背景】VX 是归类为神经毒剂的一种人造化学战剂（化学战剂：用于战争目的、具有剧烈毒性、能大规模地毒害或杀伤敌方人畜和植物的各种化学物质），毒性强且作用迅速，6-10 毫克的 VX 颗粒便足以致命。</span><br><span class="line"></span><br><span class="line">其还设计了许多其他已知的化学战剂。出乎意料的是，它还设计出了许多看起来同样合理的新分子，根据预测值来看，这些新分子被预测比已知的化学战剂毒性更大。</span><br></pre></td></tr></table></figure>
+
+<p>该生成列表中包括许多已知的神经毒剂，尤其是VX，它是毒性最大的毒剂之一。但该软件也制造出了尚未合成的、预计更致命的物质。令人担忧的是，它们中的一些占据了化学家所称的“分子特性空间”的部分，而这些空间与已知的神经毒素完全不同。这表明，如果有人愿意尝试，可能会开发出全新类别的化学武器。</p>
+<p>Wisely, Dr Urbina and his colleagues went no further than that. They did not try to synthesise any of their putative discoveries and have certainly not published a list of them. Nor have they described the details of their method. But, in the wider scheme of things, it is not those details that matter. What matters is that they have shown this approach works in principle.</p>
+<p>明智的是，Urbina博士和他的同事没有进一步研究。他们没有试图合成任何他们假定的发现，当然也没有发表一份列表。他们也没有详细描述他们的方法。但是，从更广泛的角度来看，这些细节并不重要。重要的是，他们已经证明这种方法原则上是可行的。</p>
+<p>Moreover, as the authors themselves make clear, many people have the knowledge, if not the motive, to act on that fact. “We are but one very small company in a universe of many hundreds of companies using AI software for drug discovery and <em>de novo</em> design. How many of them have even considered repurposing, or misuse, possibilities?” They admit that, before being prompted by their role in the conference, they certainly had not considered them. “The thought had never previously struck us. We were vaguely aware of security concerns around work with pathogens or toxic chemicals, but that did not relate to us; we primarily operate in a virtual setting…Even our projects on Ebola and neurotoxins… had not set our alarm bells ringing.”</p>
+<p>此外，正如作者自己所阐明的那样，许多人即使没有动机，也知道要根据这一事实采取行动。“我们只是世界上数百家使用人工智能软件进行药物研发和‘从头设计’的公司中的一家很小的公司。有多少人考虑过重定位或滥用的可能性?” 他们承认，在受到他们在会议中所扮演角色的影响之前，他们肯定没有考虑过这些问题。“我们以前从未有过这样的想法。我们模糊地意识到与病原体或有毒化学品有关的工作安全问题，但这与我们无关; 我们主要在虚拟环境中运作，甚至我们关于埃博拉和神经毒素的项目…也没有敲响我们的警钟。”</p>
+<p>Such naivety is surely widespread in the industry, and the paper’s authors, who include Filippa Lentzos, an expert on biosecurity at King’s College, London—whose idea it was to write the article in the first place—and Cédric Invernizzi of the Spiez Laboratory, are open about this. As the paper observes, “Our own commercial tools, as well as open-source software tools and many datasets that populate public databases, are available with no oversight.”</p>
+<p>这种天真的想法肯定在业界很普遍，这篇论文的作者，包括伦敦国王学院的生物安全专家Filippa Lentzos(他最初的想法是写这篇文章)和斯皮兹实验室的Cédric Invernizzi，都对此持开放态度。正如这篇论文所观察到的，“我们自己的商业工具，以及开源软件工具和许多公共数据库中的数据集，都可以在没有监督的情况下使用。”</p>
+<p>As to dealing with the problem, the authors ask questions about harms both direct (should software downloads be monitored, or sales to certain groups restricted?) and indirect (will one result be restrictions and reduced investment in an area that has great medical potential?). But they offer few answers.</p>
+<p>至于如何处理这一问题，作者提出了直接(是否应该监控软件下载，或限制对特定群体的销售?)和间接(其中一个结果是限制和减少对一个具有巨大医疗潜力的领域的投资?)的问题。但他们提供的答案很少。</p>
+<p>They do, though, draw an analogy with GPT-3, a natural-language generator with plenty of potential for abuse (for example, the creation of “deepfakes” purporting to be the words of real people). The inventors of this have so far kept its most crucial parts under wraps by employing what is known as an application-programming interface to stop outsiders prying. That might work for future software releases in the field of drug discovery, but will do little to deal with what is out there already.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">【1】purport 标榜</span><br></pre></td></tr></table></figure>
+
+<p>不过，他们确实拿GPT-3做了一个类比，GPT-3是一种很有可能被滥用的自然语言生成器(例如，标榜是真人说的话的“deepfakes”)。到目前为止，该技术的发明者通过应用程序接口(API)来阻止外界的窥探，从而对其最关键的部分进行了保密。这可能适用于未来药物发现领域的软件发布，但对已经存在的软件几乎没有帮助。</p>
+<p>In any case, even if no <strong>company</strong> has yet thought along the lines Dr Urbina and Dr Ekins have just opened up, <strong>governments</strong> probably will have done. And so, perhaps, will terrorist groups.</p>
+<p>无论如何，即使还没有公司想到Urbina博士和Ekins博士刚刚开辟的“路线”，政府可能已经做了。恐怖组织或许也会如此。</p>
+<p>Governments in rich countries have, it is true, found little use for chemical weapons in regular combat since the first world war, and for good reason. They are no more deadly (and often less so) than high explosives, are easier to protect against, and are also harder to contain. Bombs, shells and rockets are simply more reliable. As agents of terror, though, whether delivered by dysfunctional states against rebel populations or by irregulars against civilians under the protection of their target governments, they are perfect. ■</p>
+<p>的确，自第一次世界大战以来，发达国家的政府在常规战斗中很少使用化学武器，这是有充分理由的。它们并不比烈性炸药更具杀伤力(甚至不如烈性炸药)，更容易防范，但也更难控制。炸弹、炮弹和火箭弹更可靠。然而，作为恐怖活动的媒介，无论是由功能失调的国家用来对付叛乱分子，还是由非正规部队用来对付目标政府保护下的平民，它们都是完美的。■</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+        <div id="donation_div"></div>
+
+
+<script src="/js/vdonate.js"></script>
+
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png',
+  alipayImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg'
+});
+</script>
+      
+            
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/03/19/Day695-The%20Economist/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/03/19/Day693-The%20Economist/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-tweak-drug-design-software-to-create-chemical-weapons"><span class="nav-number">1.</span> <span class="nav-text">How to tweak drug-design software to create chemical weapons</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Chemical-warfare"><span class="nav-number">1.0.0.0.0.1.</span> <span class="nav-text">Chemical warfare</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Just-ask-the-program-to-enhance-rather-than-reduce-toxicity"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">Just ask the program to enhance, rather than reduce, toxicity</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hiding-in-plain-sight"><span class="nav-number">1.1.</span> <span class="nav-text">Hiding in plain sight</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2023 Hexo All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>

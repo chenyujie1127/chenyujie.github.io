@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  
+  <meta name="description" content="文章来源：《经济学人》Dec 4th 2021 期 Science &amp; technology 栏目 How to generate better, cheaper, more abundant random numbers如何生成更好、更便宜、更丰富的随机数 Flipping heck! And why that is important以及为什么这很重要？ RANDOMNESS IS A">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/12/03/Day595-The%20Economist/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="文章来源：《经济学人》Dec 4th 2021 期 Science &amp; technology 栏目 How to generate better, cheaper, more abundant random numbers如何生成更好、更便宜、更丰富的随机数 Flipping heck! And why that is important以及为什么这很重要？ RANDOMNESS IS A">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/2021/12/articles/main/20211204_std001.jpg">
+<meta property="article:published_time" content="2021-12-03T04:45:24.760Z">
+<meta property="article:modified_time" content="2021-12-07T04:14:36.498Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/2021/12/articles/main/20211204_std001.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-0123456789ABCDEF",
+          enable_page_level_ads: true
+      });
+  </script>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "Home"; 
+
+  themeMenus["/archives"] = "Archives"; 
+
+  themeMenus["/categories"] = "Categories"; 
+
+  themeMenus["/tags"] = "Tags"; 
+
+  themeMenus["/about"] = "About"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="Hexo" rel="home"> Hexo </a>
+            
+          </h1>
+
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-Day595-The Economist" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2021/12/03/Day595-The%20Economist/" class="article-date">
+	  <time datetime="2021-12-03T04:45:24.760Z" itemprop="datePublished">December 3, 2021</time>
+	</a>
+
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>文章来源：《经济学人》Dec 4th 2021 期 Science &amp; technology 栏目</p>
+<h1 id="How-to-generate-better-cheaper-more-abundant-random-numbers"><a href="#How-to-generate-better-cheaper-more-abundant-random-numbers" class="headerlink" title="How to generate better, cheaper, more abundant random numbers"></a>How to generate better, cheaper, more abundant random numbers</h1><p>如何生成更好、更便宜、更丰富的随机数</p>
+<h6 id="Flipping-heck"><a href="#Flipping-heck" class="headerlink" title="Flipping heck!"></a>Flipping heck!</h6><p><img src="https://www.economist.com/img/b/1280/720/90/sites/default/files/images/2021/12/articles/main/20211204_std001.jpg" alt="img"></p>
+<h5 id="And-why-that-is-important"><a href="#And-why-that-is-important" class="headerlink" title="And why that is important"></a>And why that is important</h5><p>以及为什么这很重要？</p>
+<p>RANDOMNESS IS A valuable commodity. Computer models of complex systems ranging from the weather to the stockmarket are voracious consumers of random numbers. Cryptography, too, relies heavily on random numbers for the generation of unbreakable keys. <strong>Better, cheaper ways of generating and handling such numbers are therefore always welcome.</strong> And doing just that is the goal of a project with the slightly tongue-in-cheek name of COINFLIPS, which allegedly stands for Co-designed Improved Neural Foundations Leveraging Inherent Physics Stochasticity.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">【1】tongue-in-cheek 挖苦的；随便说说的</span><br></pre></td></tr></table></figure>
+
+<p>随机性是一种重要的性质。复杂系统(从天气到股市)的计算机模型都是随机数的贪婪消费者。密码学也在很大程度上依赖随机数来生成无法破解的密钥。因此，用更好、更便宜的方法来生成和处理这些随机数总是受欢迎的。COINFLIPS(略微随意的名字)这个项目的目的就是达成这一目标，COINFLIPS的意思是利用固有物理随机性协同设计改进的神经基础。</p>
+<p>COINFLIPS operates under the aegis of Brad Aimone, a theoretical neuroscientist at Sandia National Laboratories (originally one of America’s nuclear-weapons laboratories, but which has now branched out into other areas, too). Dr Aimone’s starting-point is the observation that, unlike the circuits of digital computers, <strong>which will</strong>, if fed a given input, <strong>respond with a precise and predictable output</strong>, the link between input to and output from a nerve cell is more haphazard—or, in the jargon, “stochastic”. He wants to imitate this stochastic behaviour in something less squishy than a nerve cell. By doing so, he thinks he might be able to tune the distribution of digits that a random-number generator spits out, without affecting their underlying randomness.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">【1】under the aegis of 在…的支持下；在…的保护下 </span><br><span class="line">【2】haphazard 随意的；杂乱的</span><br><span class="line">【3】stochastic 随机的</span><br></pre></td></tr></table></figure>
+
+<p>COINFLIPS是在美国桑迪亚国家实验室(最初是美国核武器实验室之一，但现在也扩展到其他领域)的理论神经学家Brad Aimone的支持下运作的。Aimone博士的出发点是观察到，与数字计算机的电路不同的是，数字计算机的电路在输入一个给定的输入后，会产生精确而可预测的输出，而神经细胞的输入和输出之间的联系是更随意，或者用行话来说，是“随机的”。他想在不像神经细胞那么软粘的东西上模仿这种随机行为。通过这样做，他认为他可能能够在不影响随机数生成器潜在的随机性的前提下，调整随机数生成器吐出的数字的分布。</p>
+<h2 id="Random-doodlings"><a href="#Random-doodlings" class="headerlink" title="Random doodlings"></a>Random doodlings</h2><p>That would be useful. Existing random-number generators produce uniform distributions. (A “3”, say, is exactly as likely to appear as a “7”.) But, as Dr Aimone’s colleague Darby Smith notes, <strong>the real world</strong> that computer modellers are trying to model <strong>does not work like this</strong>. For example, the temperature in London in December may vary between -7°C and 17°C, but is most likely to be in the range 3°C to 8°C. Similarly, vessels are more likely to <strong>be in trouble</strong> close to a busy shipping route than in a remote backwater. Distorting uniform distributions of random numbers to take account of these realities is tedious and unsatisfactory. As Dr Smith observes, it would be more efficient if the random numbers used corresponded to the natural distribution in the first place.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">【1】backwater 回水；滞水</span><br><span class="line">[释义] a part of a river where the water does not flow</span><br><span class="line">【2】to correspond to sample 符合样本标准</span><br></pre></td></tr></table></figure>
+
+<p>这很有用。现有的随机数生成器产生数字是符合均匀分布的。(比如说，一个“3”和一个“7”出现的可能性是一样的。) 但是，正如Aimone博士的同事Darby Smith指出的那样，计算机建模者试图模拟的真实世界并不是这样工作的。例如，伦敦12月的温度可能在-7°C到17°C之间变化，但最有可能在3°C到8°C之间变化。同样地，船只在繁忙航线附近比在偏远的回水区更容易遇到麻烦。通过扭曲随机数的均匀分布来考虑这些真实情况是乏味的且不令人满意的。正如Smith博士所说的那样，如果随机数一开始就符合自然分布，那么效率会更高。</p>
+<p><strong>There is also an abundance problem.</strong> Finding random phenomena in nature that can be transformed into computer bits is not easy. Often the source is computing itself—for example, by gathering the last digits in the numbers of milliseconds between keystrokes made by zillions of users. Otherwise, specialist, expensive hardware needs to be used to do things such as measuring heat flux through a silicon chip.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">【1】zillion 不计其数的</span><br><span class="line">【2】milliseconds 毫秒</span><br></pre></td></tr></table></figure>
+
+<p>另外还有一个问题。要找到自然界中可以转化为计算机比特的随机现象并不容易。通常，源是计算它本身，例如，通过收集无数用户按键之间的毫秒数的最后一位数。否则，需要使用专业的、昂贵的硬件来做一些事情，例如测量通过硅片的热流。</p>
+<p>To eke out these scarce supplies, such truly random numbers are often then employed to seed programs called pseudo-random-number generators. The algorithms behind those generate sequences of numbers that have the statistical properties of randomness. But this is not the same as the real thing. As John von Neumann, one of computing’s pioneers, observed: “Anyone who considers arithmetical methods of producing random digits is, of course, in a state of sin.” Moreover, if the purpose is cryptography, this method is particularly risky. The opposition might be able to work out the algorithm involved.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">【1】eke out 弥补...的不足</span><br></pre></td></tr></table></figure>
+
+<p>为了弥补这些稀缺的资源，这些真正的随机数通常被送到叫做“伪随机数生成器”的种子程序里。这些算法产生的数字序列具有随机性的统计特性。但这和真正的随机数是不一样的。正如计算机领域的先驱之一冯•诺伊曼所说:“任何考虑用算术方法产生随机数的人，当然都处于罪恶的状态。” 此外，如果生成随机数的目的是加密，这种方法尤其危险。因为对手也许能“破译”其中涉及的算法。</p>
+<p>Another member of the project, Shashank Misra, says COINFLIPS’ researchers have identified two hardware-based approaches for the production of tuneable, abundant random numbers. One relies on the patterns magnetic films make when disturbed, the other on how electrons travel through the barrier of a quantum-tunnelling diode. Both of these things are truly random. And both can be tuned to provide the sort of random-number distributions COINFLIPS requires.</p>
+<p>该项目的另一位成员Shashank Misra说，COINFLIPS的研究人员已经确定了两种基于硬件的方法来产生可调的大量随机数。一种依赖于磁性薄膜在受到干扰时所产生的模式，另一种依赖于电子如何通过量子隧穿二极管的位势垒。这两种情况都是真正随机的。两者都可以调整以提供COINFLIPS所需的随机数分布类型。</p>
+<p>In a quantum-tunnelling diode, electrons randomly leap (or fail to leap) across a gap, and the distribution of success or failure can be changed (and therefore tuned) by altering the voltage. A magnetic film, meanwhile, is composed of many tiny magnets jostling with each other. Flip the polarity of one of these and others around it flip in response, creating a random pattern. In this case the plan is to build tuneability into the magnetic medium itself, by tinkering with its composition, and also applying strain to it.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">【1】magnetic medium 磁介质</span><br></pre></td></tr></table></figure>
+
+<p>在量子隧穿二极管中，电子随机跃过(或未能跃过)一个间隙，而成功或失败的分布可以通过改变电压来改变(并因此可以调整)。同时，磁性薄膜是由许多相互碰撞的微小磁铁组成的。翻转其中一个的极性，它周围的其他的也随之翻转，形成一个随机模式。在这种情况下，其计划是通过调整其构成，并对其施加应变，将可调性植入磁介质本身。[非专业人士，有误可以在评论区指正]</p>
+<p>Random-number-generating hardware based on either of these approaches could be built directly into chips. Alternatively, a random-number-generating unit might be added to existing devices to yield an endless supply of high-speed randomness in the way that graphics-processing units are added to machines that have to handle a lot of graphical material. Crucially, unlike the heat-flux method, which requires intermediate hardware involving thousands of transistors to translate the signal into digital bits, the results of the diode and film methods can be read off as bits directly, using only one or two transistors to do so.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">【1】read off 接连读出</span><br></pre></td></tr></table></figure>
+
+<p>基于这两种方法中的任何一种的随机数生成硬件都可以直接内置于芯片中。或者，可以向现有设备添加一个随机数字生成单元，以无限提供高速随机性，就像将图形处理单元(GPU)添加到要处理大量图像数据的机器中一样。至关重要的是，热流法需要包含数千个晶体管的中间硬件将信号转换为比特数字，而二极管和薄膜法的结果可以直接接连读取为比特，只需要一个或两个晶体管。</p>
+<p>The efficiency offered by COINFLIPS means some tasks which currently require a supercomputer might be carried out with desktop hardware, depending on how much of the load involves generating and manipulating random numbers. Dr Aimone says the current approach tends to be simply to build bigger computers where needed. But even then some large-scale tasks may be too costly in money and time lost to conduct. You can, for example, run a model of a hurricane’s path only so many times before the real thing makes landfall.</p>
+<p>COINFLIPS所提供的效率意味着一些目前需要超级计算机才能执行的任务可能会用台式机的硬件也可以执行，这取决于生成和控制随机数的负载的多少。Aimone博士说，目前的方法倾向于简单地在需要的地方建造更大的计算机。但即便如此，一些大规模的任务可能要花费大量的金钱和时间来执行。例如，在真正的飓风登陆之前，你只能运行飓风路径的模型这么多次。</p>
+<h2 id="The-heart-of-the-matter"><a href="#The-heart-of-the-matter" class="headerlink" title="The heart of the matter"></a>The heart of the matter</h2><p>Despite its peregrinations elsewhere, though, Sandia is ultimately in the nuclear business, and one early application of whatever COINFLIPS comes up with is likely to involve interpreting the results of collisions in particle accelerators—something the team have been exploring in collaboration with Temple University, in Philadelphia. The idea is to build a device which incorporates COINFLIPS hardware into the sensor itself. This will allow results from collisions, which will be randomly distributed, but in particular ways, to be compared with artificial random distributions, to see if they match. To be able to do this in real time is useful, because it allows an immediate decision to be made about whether or not to store a particular result. Modern colliders generate so many collisions that such immediacy in decision-making is important.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">【1】peregrination 长途旅行</span><br></pre></td></tr></table></figure>
+
+<p>尽管桑迪亚在其他地方也有涉足，但它最终还是从事核业务，而且COINFLIPS提出的任何一个早期应用都可能涉及到解释粒子加速器碰撞的结果，这是该团队与费城坦普尔大学合作探索的内容。这个想法是建立一个将COINFLIPS硬件集成到传感器本身的设备。这将允许以特定的方式随机分布的碰撞结果与人为的随机分布进行比较，看看它们是否匹配。能够实时执行此操作是非常有用的，因为它允许立即决定是否存储特定的结果。现代对撞机产生了如此多的碰撞，以至于决策的即时性非常重要。</p>
+<p>That is one, rather specific, application. But in the longer run, says Dr Aimone, COINFLIPS should enable many types of calculation that are currently impossible because of the volume of random numbers needed—for example, artificial-intelligence systems that capture the uncertainty of the world. This might be done in the form of neural networks which, like the human brain, have randomness available at each synapse. And that, in turn, may lead to COINFLIPS, a project inspired by biology, returning the compliment by providing a better way of understanding of how brains themselves work. ■</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">【1】synapse 突触</span><br></pre></td></tr></table></figure>
+
+<p>这是一个非常特殊的应用。但从长远来看，Aimone博士说，COINFLIPS将使许多目前由于所需随机数的数量而无法实现的计算成为可能，例如，捕捉世界不确定性的人工智能系统。这可能以神经网络的形式实现，神经网络就像人脑一样，每个突触都有随机性。反过来，这可能会导致COINFLIPS，这样一个受生物学启发的项目，通过提供更好的理解大脑本身是如何工作的方式予以回报。■</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+        <div id="donation_div"></div>
+
+
+<script src="/js/vdonate.js"></script>
+
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/WeChanQR.png',
+  alipayImage: 'https://raw.githubusercontent.com/iTimeTraveler/iTimeTraveler.github.io/site/source/about/donate/images/AliPayQR.jpg'
+});
+</script>
+      
+            
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/12/03/Day596-The%20Economist/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/12/03/Day594-The%20Economist/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#How-to-generate-better-cheaper-more-abundant-random-numbers"><span class="nav-number">1.</span> <span class="nav-text">How to generate better, cheaper, more abundant random numbers</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#Flipping-heck"><span class="nav-number">1.0.0.0.0.1.</span> <span class="nav-text">Flipping heck!</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#And-why-that-is-important"><span class="nav-number">1.0.0.0.1.</span> <span class="nav-text">And why that is important</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Random-doodlings"><span class="nav-number">1.1.</span> <span class="nav-text">Random doodlings</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-heart-of-the-matter"><span class="nav-number">1.2.</span> <span class="nav-text">The heart of the matter</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2023 Hexo All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
