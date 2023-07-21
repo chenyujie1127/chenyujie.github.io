@@ -25,15 +25,15 @@
   
   
   
-  <meta name="description" content="一、MAC本机 【1】打开终端terminal，安装homebrew PS: 如果没有报错，可以直接安装；否则建议卸载重装 卸载命令： 1$ &#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;gitee.com&#x2F;ineo6&#x2F;homebrew-install&#x2F;raw&#x2F;master&#x2F;uninstall.sh)&quot;  安装命令： 1$ &#x2F;bin&#x2F;bash -c &amp;q">
+  <meta name="description" content="第一次尝试搭建个人技术博客，记录踩坑实践">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+Github搭建个人技术博客（MAC操作版）">
 <meta property="og:url" content="http://example.com/2023/07/21/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Yujie&#39;s Blog">
-<meta property="og:description" content="一、MAC本机 【1】打开终端terminal，安装homebrew PS: 如果没有报错，可以直接安装；否则建议卸载重装 卸载命令： 1$ &#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;gitee.com&#x2F;ineo6&#x2F;homebrew-install&#x2F;raw&#x2F;master&#x2F;uninstall.sh)&quot;  安装命令： 1$ &#x2F;bin&#x2F;bash -c &amp;q">
+<meta property="og:description" content="第一次尝试搭建个人技术博客，记录踩坑实践">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-21T12:53:54.655Z">
-<meta property="article:modified_time" content="2023-07-21T14:26:47.041Z">
+<meta property="article:modified_time" content="2023-07-21T14:39:34.456Z">
 <meta property="article:author" content="Chen Yujie">
 <meta property="article:tag" content="开发">
 <meta name="twitter:card" content="summary">
@@ -208,7 +208,10 @@ var themeMenus = {};
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>一、MAC本机</strong></p>
+        <p>第一次尝试搭建个人技术博客，记录踩坑实践</p>
+<span id="more"></span>
+
+<p><strong>一、MAC本机</strong></p>
 <p>【1】打开终端terminal，<strong>安装homebrew</strong></p>
 <p>PS: 如果没有报错，可以直接安装；否则建议卸载重装</p>
 <p>卸载命令：</p>
@@ -272,19 +275,19 @@ var themeMenus = {};
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /Users/chenyujie/Desktop/yujie_blog</span><br><span class="line">ssh-keygen -t rsa -C &quot;your email@example.com&quot; </span><br><span class="line">// 引号里面填写你的邮箱地址</span><br></pre></td></tr></table></figure>
 
 <p>完成后会有一个ssh-rsa开头的密钥，结尾是你前面配置的邮箱，全部复制粘贴，如果没有复制上，可以选择执行下面的命令，然后再复制</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 
 <p>切换到Github，打开自己右上角页面的头像处，点击下拉框中的Settings，再点击 SSH and GPG Keys，选择 New SSH key，粘贴密钥，Title随意填写，Key填写刚才粘贴的内容。</p>
 <p>此时可以回退到MAC本地，测试一下如下命令（无需修改，直接复制粘贴测试），之后输入yes， 返回 You’ve succcessfully authenticated..表示设置正确</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
 <p>配置个人信息： 用户名就是前面那哥abc , 邮箱可以看下github注册时自己填的哪个邮箱，尽量保持一致</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;此处填你的用户名&quot;  </span><br><span class="line">git config --global user.email  &quot;此处填你的邮箱&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;此处填你的用户名&quot;  </span><br><span class="line">git config --global user.email  &quot;此处填你的邮箱&quot;</span><br></pre></td></tr></table></figure>
 
 <p>此时，SSH Key已经配置成功，本机已成功连接到 Github</p>
 <p>【4】打开github设置的仓库 <strong><u>你的用户名.github.io</u></strong> （如：abc.github.io）, 点击Clone or download 按钮，选择 Use SSH，复制</p>
 <p>【5】任意打开一个编辑器，打开blog文件夹下的_config.yml文件，拉到最后，按照如下修改</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: 刚刚复制的【4】中的ssh地址</span><br><span class="line">  branch: main【和github默认分支保持一致】</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">刚刚复制的【4】中的ssh地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main【和github默认分支保持一致】</span></span><br></pre></td></tr></table></figure>
 
 <p>【6】MAC本地执行，在blog文件夹路径下，执行</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g  </span><br><span class="line">hexo d</span><br><span class="line">// 或者直接执行 hexo g -d</span><br></pre></td></tr></table></figure>
@@ -301,57 +304,57 @@ var themeMenus = {};
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;文章标题&quot;</span><br></pre></td></tr></table></figure>
 
 <p>【2】用编辑器编写文章，我用的Typora</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: 页面布局（配合主题文档使用）</span><br><span class="line">title: 文章名称</span><br><span class="line">date: 文章日期</span><br><span class="line">comments: 文章是否开启评论</span><br><span class="line">photos: 文章封面图（仅部分主题支持）</span><br><span class="line">tags: </span><br><span class="line">  - 文章标签一</span><br><span class="line">  - 文章标签二</span><br><span class="line">categories: 文章分类</span><br><span class="line">description: 文章描述，即要在首页显示的摘要（仅部分主题支持）</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">这里是摘要</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line">这里是正文</span><br><span class="line"></span><br><span class="line">注意：description 和 &lt;!-- more --&gt; 方式显示摘要二选一即可，部分主题不支持description，每个配置英文冒号后面要空一格，不同主题配置有所差异，具体要参考主题文档</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: 页面布局（配合主题文档使用）</span><br><span class="line">title: 文章名称</span><br><span class="line">date: 文章日期</span><br><span class="line">comments: 文章是否开启评论</span><br><span class="line">photos: 文章封面图（仅部分主题支持）</span><br><span class="line">tags: </span><br><span class="line"><span class="bullet">  -</span> 文章标签一</span><br><span class="line"><span class="bullet">  -</span> 文章标签二</span><br><span class="line">categories: 文章分类</span><br><span class="line"><span class="section">description: 文章描述，即要在首页显示的摘要（仅部分主题支持）</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br><span class="line">这里是摘要</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line">这里是正文</span><br><span class="line"></span><br><span class="line">注意：description 和 &lt;!-- more --&gt; 方式显示摘要二选一即可，部分主题不支持description，每个配置英文冒号后面要空一格，不同主题配置有所差异，具体要参考主题文档</span><br></pre></td></tr></table></figure>
 
 <p>【3】如果有图片文件，可以在blogs&#x2F;source文件夹下面新建images文件夹，之后md中的文件路径均为“&#x2F;images&#x2F;你的图片.jpg ‘图片名’”</p>
 <p>【4】上传文件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 
 <p><strong>四、给个人博客换个你喜欢的主题</strong></p>
 <p>【1】<a target="_blank" rel="noopener" href="https://hexo.io/themes/">点击此处</a>进入 Hexo 官网的主题专栏</p>
 <p>【2】目标是把主题克隆过来，首先随便点个你喜欢的主题（如：hexo-theme-hiero），然后找到页面上的 Theme By xxx, 之后点击xxx，页面跳转对应的GitHub地址，然后复制网址</p>
 <p>【3】进入到blog文件下的themes目录，执行如下代码，然后相应主题的目录就会在themes文件夹下出现</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 此处填写你刚才复制的网址</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 此处填写你刚才复制的网址</span><br></pre></td></tr></table></figure>
 
 <p>【4】打开 blog 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：theme：<u>你选的主题名</u>（如hexo-theme-hiero）</p>
 <p>【5】返回blog目录，执行如下命令即可发现，博客主题已经更换</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p>【6】执行如下命令，清楚缓存，并部署到GitHub</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 
 <p>这里面可以配置 <code>_</code>config.yml文件，修改title相关的信息，与主题相关的配置文件blogs&#x2F;<code>_</code>config.yml</p>
 <p><strong>五、为博客添加搜索功能</strong></p>
 <p>local_search: </p>
 <p>【1】在blog文件夹下执行如下命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-json-content --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-json-content --save</span><br></pre></td></tr></table></figure>
 
 <p>【2】仍需修改主题的_config.yml文件 （不过我的主题下默认开启了，不是如下内容）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 本地搜索</span><br><span class="line">local_search:</span><br><span class="line">	enable: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">本地搜索</span></span><br><span class="line">local_search:</span><br><span class="line">	enable: true</span><br></pre></td></tr></table></figure>
 
 <p>我配置的主题显示如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">    insight: true # you need to install `hexo-generator-json-content` before using Insight Search</span><br><span class="line">    swiftype: # enter swiftype install key here</span><br><span class="line">    baidu: false # you need to disable other search engines to use Baidu search, options: true, false</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">    <span class="attr">insight:</span> <span class="literal">true</span> <span class="comment"># you need to install `hexo-generator-json-content` before using Insight Search</span></span><br><span class="line">    <span class="attr">swiftype:</span> <span class="comment"># enter swiftype install key here</span></span><br><span class="line">    <span class="attr">baidu:</span> <span class="literal">false</span> <span class="comment"># you need to disable other search engines to use Baidu search, options: true, false</span></span><br></pre></td></tr></table></figure>
 
 <p> Algolia 搜索:</p>
 <p>【1】获取 Algolia 账号</p>
 <p>注册 Algolia，进入<a target="_blank" rel="noopener" href="https://www.algolia.com/">官网地址</a> 注册，也可以直接用<code>Github</code>授权登录。</p>
 <p>【2】新建 Index（Create index）</p>
 <p>【3】安装hexo-algoliasearch插件（推荐）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-algoliasearch --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-algoliasearch --save</span><br></pre></td></tr></table></figure>
 
 <p>【4】打开Algolia网站，点击Settings，点击Team and Access下面的API Keys。然后，在最外层文件夹下（如yujie_blog），修改配置文件_config.yml</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">algolia:</span><br><span class="line">  appId: &quot;your applicationID&quot;</span><br><span class="line">  apiKey: &quot;your Search-Only API Key&quot;</span><br><span class="line">  adminApiKey: &quot;your Admin API Key&quot;</span><br><span class="line">  chunkSize: 5000</span><br><span class="line">  indexName: &quot;your indexName&quot;</span><br><span class="line">  fields:</span><br><span class="line">    - content:strip:truncate,0,500</span><br><span class="line">    - excerpt:strip</span><br><span class="line">    - gallery</span><br><span class="line">    - permalink</span><br><span class="line">    - photos</span><br><span class="line">    - slug</span><br><span class="line">    - tags</span><br><span class="line">    - title</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">algolia:</span></span><br><span class="line">  <span class="attr">appId:</span> <span class="string">&quot;your applicationID&quot;</span></span><br><span class="line">  <span class="attr">apiKey:</span> <span class="string">&quot;your Search-Only API Key&quot;</span></span><br><span class="line">  <span class="attr">adminApiKey:</span> <span class="string">&quot;your Admin API Key&quot;</span></span><br><span class="line">  <span class="attr">chunkSize:</span> <span class="number">5000</span></span><br><span class="line">  <span class="attr">indexName:</span> <span class="string">&quot;your indexName&quot;</span></span><br><span class="line">  <span class="attr">fields:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">content:strip:truncate,0,500</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">excerpt:strip</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">gallery</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">permalink</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">photos</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">slug</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">tags</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">title</span></span><br></pre></td></tr></table></figure>
 
 <p>其中【applicationID】填入 Applicaiton ID，【apiKey】填入Search-Only API Key ，【Admin API Key】填入 Admin API Key ，【indexName】填入前面创建的索引名称。</p>
 <p>【5】执行如下命令</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo algolia</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo algolia</span><br></pre></td></tr></table></figure>
 
 <p>可以去 Algolia 网站上查看，索引已经上传成功了。</p>
 <p>【6】在主题配置文件<code>_config.yml</code>中修改以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">algolia_search:</span><br><span class="line">  enable: true</span><br><span class="line">  hits:</span><br><span class="line">    per_page: 10</span><br><span class="line">  labels:</span><br><span class="line">    input_placeholder: Search for Posts</span><br><span class="line">    hits_empty: &quot;我们没有找到任何搜索结果: $&#123;query&#125;&quot;</span><br><span class="line">    hits_stats: &quot;找到$&#123;hits&#125;条结果（用时$&#123;time&#125; ms）&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">algolia_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hits:</span></span><br><span class="line">    <span class="attr">per_page:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">labels:</span></span><br><span class="line">    <span class="attr">input_placeholder:</span> <span class="string">Search</span> <span class="string">for</span> <span class="string">Posts</span></span><br><span class="line">    <span class="attr">hits_empty:</span> <span class="string">&quot;我们没有找到任何搜索结果: $&#123;query&#125;&quot;</span></span><br><span class="line">    <span class="attr">hits_stats:</span> <span class="string">&quot;找到$&#123;hits&#125;条结果（用时$&#123;time&#125; ms）&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>【7】重新编译运行，即可看到效果</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo generate</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo generate</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 
       
