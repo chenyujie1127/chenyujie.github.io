@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>hexo+github搭建个人技术博客（mac操作版） | Yujie&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="开发" />
+  
+  
+  
+  
+  <meta name="description" content="一、MAC本机 【1】打开终端terminal，安装homebrew PS: 如果没有报错，可以直接安装；否则建议卸载重装 卸载命令： 1$ &#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;gitee.com&#x2F;ineo6&#x2F;homebrew-install&#x2F;raw&#x2F;master&#x2F;uninstall.sh)&quot;  安装命令： 1$ &#x2F;bin&#x2F;bash -c &amp;q">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+Github搭建个人技术博客（MAC操作版）">
+<meta property="og:url" content="http://example.com/2023/07/21/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="Yujie&#39;s Blog">
+<meta property="og:description" content="一、MAC本机 【1】打开终端terminal，安装homebrew PS: 如果没有报错，可以直接安装；否则建议卸载重装 卸载命令： 1$ &#x2F;bin&#x2F;bash -c &quot;$(curl -fsSL https:&#x2F;&#x2F;gitee.com&#x2F;ineo6&#x2F;homebrew-install&#x2F;raw&#x2F;master&#x2F;uninstall.sh)&quot;  安装命令： 1$ &#x2F;bin&#x2F;bash -c &amp;q">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-07-21T12:53:54.655Z">
+<meta property="article:modified_time" content="2023-07-21T14:26:47.041Z">
+<meta property="article:author" content="Chen Yujie">
+<meta property="article:tag" content="开发">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Yujie&#39;s Blog" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-0123456789ABCDEF",
+          enable_page_level_ads: true
+      });
+  </script>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "首页"; 
+
+  themeMenus["/archives"] = "归档"; 
+
+  themeMenus["/categories"] = "分类"; 
+
+  themeMenus["/tags"] = "标签"; 
+
+  themeMenus["/about"] = "关于"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="Yujie&#39;s Blog" rel="home"> Yujie&#39;s Blog </a>
+            
+          </h1>
+
+          
+            <div class="site-description">欢迎和我一起进步！分享生活！分享热爱</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">分类</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">标签</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">关于</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-搭建个人技术博客" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Hexo+Github搭建个人技术博客（MAC操作版）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2023/07/21/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" class="article-date">
+	  <time datetime="2023-07-21T12:53:54.655Z" itemprop="datePublished">七月 21, 2023</time>
+	</a>
+
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>一、MAC本机</strong></p>
+<p>【1】打开终端terminal，<strong>安装homebrew</strong></p>
+<p>PS: 如果没有报错，可以直接安装；否则建议卸载重装</p>
+<p>卸载命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/ineo6/homebrew-install/raw/master/uninstall.sh)</span>&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>安装命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">/bin/bash -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://gitee.com/ineo6/homebrew-install/raw/master/install.sh)</span>&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>如果遇到“homebrew-core”相关的错误，或者运行太慢卡住，直接运行如下代码：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /usr/local/Homebrew/Library/Taps/homebrew/</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">rm</span> -rf homebrew-core</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">git <span class="built_in">clone</span> https://github.com/Homebrew/homebrew-core.git</span></span><br></pre></td></tr></table></figure>
+
+<p>测试是否安装成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew -v</span><br></pre></td></tr></table></figure>
+
+<p>【2】安装node.js</p>
+<p>安装命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">brew install nodenv</span><br><span class="line">nodenv install stable</span><br><span class="line">nodenv rehash</span><br><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+
+<p>测试是否安装成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<p>配置环境变量</p>
+<p>打开终端，输入命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano ~/.bash_profile</span><br></pre></td></tr></table></figure>
+
+<p>在文件中输入如下命令，按control + O 保存退出</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;/usr/local/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+
+<p>重启终端。运行以下指令来检查你的环境变量是否设置成功：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $PATH</span><br></pre></td></tr></table></figure>
+
+<p>【3】安装hexo</p>
+<p>本地新建一个文件夹（如： &#x2F;Users&#x2F;chenyujie&#x2F;Desktop&#x2F;<strong>yujie_blog</strong>)，博客相关文件将储存在此文件夹下。</p>
+<p>安装hexo</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g  </span><br></pre></td></tr></table></figure>
+
+<p>进入到这个文件夹里面</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /Users/chenyujie/Desktop/yujie_blog</span><br></pre></td></tr></table></figure>
+
+<p>新建一个blog文件夹，执行命令初始化hexo配置（此处的blog是你要建立的文件夹名称）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+
+<p>进入这个文件夹下面，执行如下命令，开启Hexo本地服务器（本地查看效果）：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo server  </span><br></pre></td></tr></table></figure>
+
+<p>这时候出现如下字样，即成功，可进入<a target="_blank" rel="noopener" href="http://0.0.0.0:4000/%E6%9F%A5%E7%9C%8B%E6%95%88%E6%9E%9C%EF%BC%9A">http://0.0.0.0:4000/查看效果：</a> </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop. </span><br></pre></td></tr></table></figure>
+
+<p>这时候，本地博客就成功搭建了！如果想要别人能访问到，可以将博客部署到Github Pages上。</p>
+<p><strong>二、Github操作</strong></p>
+<p>【1】首先你要拥有一个github账号，注册完成后，你将拥有一个<strong>你的用户名</strong>（如：abc）</p>
+<p>【2】新建仓库</p>
+<ol>
+<li>仓库名称：**<u>你的用户名.github.io</u>** (如：**<u>abc</u>**.github.io) 【abc需要与用户名保持一致】</li>
+<li>选择默认的Public</li>
+<li>初始化README文件【打个勾就行】</li>
+<li>点击创建即可完成此步骤</li>
+</ol>
+<p>【3】配置SSH密钥</p>
+<p>在MAC本地操作，回退到yujie_blog目录，然后运行ssh开头的那行命令生成密钥，中间经历两次回车即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /Users/chenyujie/Desktop/yujie_blog</span><br><span class="line">ssh-keygen -t rsa -C &quot;your email@example.com&quot; </span><br><span class="line">// 引号里面填写你的邮箱地址</span><br></pre></td></tr></table></figure>
+
+<p>完成后会有一个ssh-rsa开头的密钥，结尾是你前面配置的邮箱，全部复制粘贴，如果没有复制上，可以选择执行下面的命令，然后再复制</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>切换到Github，打开自己右上角页面的头像处，点击下拉框中的Settings，再点击 SSH and GPG Keys，选择 New SSH key，粘贴密钥，Title随意填写，Key填写刚才粘贴的内容。</p>
+<p>此时可以回退到MAC本地，测试一下如下命令（无需修改，直接复制粘贴测试），之后输入yes， 返回 You’ve succcessfully authenticated..表示设置正确</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>配置个人信息： 用户名就是前面那哥abc , 邮箱可以看下github注册时自己填的哪个邮箱，尽量保持一致</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;此处填你的用户名&quot;  </span><br><span class="line">git config --global user.email  &quot;此处填你的邮箱&quot;</span><br></pre></td></tr></table></figure>
+
+<p>此时，SSH Key已经配置成功，本机已成功连接到 Github</p>
+<p>【4】打开github设置的仓库 <strong><u>你的用户名.github.io</u></strong> （如：abc.github.io）, 点击Clone or download 按钮，选择 Use SSH，复制</p>
+<p>【5】任意打开一个编辑器，打开blog文件夹下的_config.yml文件，拉到最后，按照如下修改</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: 刚刚复制的【4】中的ssh地址</span><br><span class="line">  branch: main【和github默认分支保持一致】</span><br></pre></td></tr></table></figure>
+
+<p>【6】MAC本地执行，在blog文件夹路径下，执行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g  </span><br><span class="line">hexo d</span><br><span class="line">// 或者直接执行 hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p>如果此时报错，执行如下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>然后再执行如下命令，博客就会部署到Github上了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p>这时候可以访问 https:&#x2F;&#x2F;你的用户名.github.io（如：<a target="_blank" rel="noopener" href="https://abc.github.io)如果此时没有显示,建议多刷新几次,或者等待会儿/">https://abc.github.io）如果此时没有显示，建议多刷新几次，或者等待会儿</a></p>
+<p><strong>三、发文章</strong></p>
+<p>【1】新建一个文章， 可以在blogs&#x2F;source&#x2F;_posts下手动生成 <strong>文章标题.md</strong> 文件，也可以直接执行如下命令生成</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;文章标题&quot;</span><br></pre></td></tr></table></figure>
+
+<p>【2】用编辑器编写文章，我用的Typora</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">layout: 页面布局（配合主题文档使用）</span><br><span class="line">title: 文章名称</span><br><span class="line">date: 文章日期</span><br><span class="line">comments: 文章是否开启评论</span><br><span class="line">photos: 文章封面图（仅部分主题支持）</span><br><span class="line">tags: </span><br><span class="line">  - 文章标签一</span><br><span class="line">  - 文章标签二</span><br><span class="line">categories: 文章分类</span><br><span class="line">description: 文章描述，即要在首页显示的摘要（仅部分主题支持）</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">这里是摘要</span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line">这里是正文</span><br><span class="line"></span><br><span class="line">注意：description 和 &lt;!-- more --&gt; 方式显示摘要二选一即可，部分主题不支持description，每个配置英文冒号后面要空一格，不同主题配置有所差异，具体要参考主题文档</span><br></pre></td></tr></table></figure>
+
+<p>【3】如果有图片文件，可以在blogs&#x2F;source文件夹下面新建images文件夹，之后md中的文件路径均为“&#x2F;images&#x2F;你的图片.jpg ‘图片名’”</p>
+<p>【4】上传文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p><strong>四、给个人博客换个你喜欢的主题</strong></p>
+<p>【1】<a target="_blank" rel="noopener" href="https://hexo.io/themes/">点击此处</a>进入 Hexo 官网的主题专栏</p>
+<p>【2】目标是把主题克隆过来，首先随便点个你喜欢的主题（如：hexo-theme-hiero），然后找到页面上的 Theme By xxx, 之后点击xxx，页面跳转对应的GitHub地址，然后复制网址</p>
+<p>【3】进入到blog文件下的themes目录，执行如下代码，然后相应主题的目录就会在themes文件夹下出现</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 此处填写你刚才复制的网址</span><br></pre></td></tr></table></figure>
+
+<p>【4】打开 blog 文件夹下的配置文件 _config.yml ，找到关键字 theme，修改参数为：theme：<u>你选的主题名</u>（如hexo-theme-hiero）</p>
+<p>【5】返回blog目录，执行如下命令即可发现，博客主题已经更换</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>【6】执行如下命令，清楚缓存，并部署到GitHub</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p>这里面可以配置 <code>_</code>config.yml文件，修改title相关的信息，与主题相关的配置文件blogs&#x2F;<code>_</code>config.yml</p>
+<p><strong>五、为博客添加搜索功能</strong></p>
+<p>local_search: </p>
+<p>【1】在blog文件夹下执行如下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-json-content --save</span><br></pre></td></tr></table></figure>
+
+<p>【2】仍需修改主题的_config.yml文件 （不过我的主题下默认开启了，不是如下内容）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 本地搜索</span><br><span class="line">local_search:</span><br><span class="line">	enable: true</span><br></pre></td></tr></table></figure>
+
+<p>我配置的主题显示如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">    insight: true # you need to install `hexo-generator-json-content` before using Insight Search</span><br><span class="line">    swiftype: # enter swiftype install key here</span><br><span class="line">    baidu: false # you need to disable other search engines to use Baidu search, options: true, false</span><br></pre></td></tr></table></figure>
+
+<p> Algolia 搜索:</p>
+<p>【1】获取 Algolia 账号</p>
+<p>注册 Algolia，进入<a target="_blank" rel="noopener" href="https://www.algolia.com/">官网地址</a> 注册，也可以直接用<code>Github</code>授权登录。</p>
+<p>【2】新建 Index（Create index）</p>
+<p>【3】安装hexo-algoliasearch插件（推荐）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-algoliasearch --save</span><br></pre></td></tr></table></figure>
+
+<p>【4】打开Algolia网站，点击Settings，点击Team and Access下面的API Keys。然后，在最外层文件夹下（如yujie_blog），修改配置文件_config.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">algolia:</span><br><span class="line">  appId: &quot;your applicationID&quot;</span><br><span class="line">  apiKey: &quot;your Search-Only API Key&quot;</span><br><span class="line">  adminApiKey: &quot;your Admin API Key&quot;</span><br><span class="line">  chunkSize: 5000</span><br><span class="line">  indexName: &quot;your indexName&quot;</span><br><span class="line">  fields:</span><br><span class="line">    - content:strip:truncate,0,500</span><br><span class="line">    - excerpt:strip</span><br><span class="line">    - gallery</span><br><span class="line">    - permalink</span><br><span class="line">    - photos</span><br><span class="line">    - slug</span><br><span class="line">    - tags</span><br><span class="line">    - title</span><br></pre></td></tr></table></figure>
+
+<p>其中【applicationID】填入 Applicaiton ID，【apiKey】填入Search-Only API Key ，【Admin API Key】填入 Admin API Key ，【indexName】填入前面创建的索引名称。</p>
+<p>【5】执行如下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo algolia</span><br></pre></td></tr></table></figure>
+
+<p>可以去 Algolia 网站上查看，索引已经上传成功了。</p>
+<p>【6】在主题配置文件<code>_config.yml</code>中修改以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">algolia_search:</span><br><span class="line">  enable: true</span><br><span class="line">  hits:</span><br><span class="line">    per_page: 10</span><br><span class="line">  labels:</span><br><span class="line">    input_placeholder: Search for Posts</span><br><span class="line">    hits_empty: &quot;我们没有找到任何搜索结果: $&#123;query&#125;&quot;</span><br><span class="line">    hits_stats: &quot;找到$&#123;hits&#125;条结果（用时$&#123;time&#125; ms）&quot;</span><br></pre></td></tr></table></figure>
+
+<p>【7】重新编译运行，即可看到效果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo generate</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BC%80%E5%8F%91/" rel="tag">开发</a></li></ul>
+
+      
+        <div id="donation_div"></div>
+
+
+<script src="/js/vdonate.js"></script>
+
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: '打赏支持', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '/images/wechat.jpg',
+  alipayImage: '/images/alipay.jpg'
+});
+</script>
+      
+            
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/07/15/Day1020-The%20Economist/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Day1019-The Economist</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">文章目录</strong>
+    
+      <ol class="nav">无</ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2023 Yujie&#39;s Blog All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="https://dnqof95d40fo6.cloudfront.net/atw7f8.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
