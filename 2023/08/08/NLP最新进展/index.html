@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- PACE Progress Bar START -->
+  
+    
+<script src="https://raw.githubusercontent.com/HubSpot/pace/v1.0.2/pace.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://github.com/HubSpot/pace/raw/master/themes/orange/pace-theme-flash.css">
+
+  
+  
+
+  <!-- PACE Progress Bar START -->
+
+  
+  <title>llm相关进展 | Yujie&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="AI" />
+  
+  
+  
+  
+  <meta name="description" content="跟踪大语言模型相关的最新进展">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LLM相关进展">
+<meta property="og:url" content="http://example.com/2023/08/08/NLP%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95/index.html">
+<meta property="og:site_name" content="Yujie&#39;s Blog">
+<meta property="og:description" content="跟踪大语言模型相关的最新进展">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-08T08:23:51.858Z">
+<meta property="article:modified_time" content="2023-08-08T11:23:03.119Z">
+<meta property="article:author" content="Chen Yujie">
+<meta property="article:tag" content="AI">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Yujie&#39;s Blog" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+  
+    <link rel="stylesheet" href="/css/vdonate.css" >
+  
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/my.css">
+
+  <!-- Google Adsense -->
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-0123456789ABCDEF",
+          enable_page_level_ads: true
+      });
+  </script>
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<script>
+var themeMenus = {};
+
+  themeMenus["/"] = "首页"; 
+
+  themeMenus["/archives"] = "归档"; 
+
+  themeMenus["/categories"] = "分类"; 
+
+  themeMenus["/tags"] = "标签"; 
+
+  themeMenus["/about"] = "关于"; 
+
+</script>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" title="Yujie&#39;s Blog" rel="home"> Yujie&#39;s Blog </a>
+            
+          </h1>
+
+          
+            <div class="site-description">欢迎和我一起进步！分享生活！分享热爱</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">分类</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">标签</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">关于</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="originBgDiv" style="background: #fff; width: 100%;">
+
+      <div style="max-height:600px; overflow: hidden;  display: flex; display: -webkit-flex; align-items: center;">
+        <img id="originBg" width="100%" alt="" src="">
+      </div>
+
+  </div>
+
+  <script>
+  function setAboutIMG(){
+      var imgUrls = "css/images/pose.jpg,https://source.unsplash.com/collection/954550/1920x1080".split(",");
+      var random = Math.floor((Math.random() * imgUrls.length ));
+      if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+        document.getElementById("originBg").src=imgUrls[random];
+      } else {
+        document.getElementById("originBg").src='/' + imgUrls[random];
+      }
+  }
+  bgDiv=document.getElementById("originBgDiv");
+  if(location.pathname.match('about')){
+    setAboutIMG();
+    bgDiv.style.display='block';
+  }else{
+    bgDiv.style.display='none';
+  }
+  </script>
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-NLP最新进展" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      LLM相关进展
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2023/08/08/NLP%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95/" class="article-date">
+	  <time datetime="2023-08-08T08:23:51.858Z" itemprop="datePublished">八月 8, 2023</time>
+	</a>
+
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>跟踪大语言模型相关的最新进展</p>
+<span id="more"></span>
+
+<h1 id="LLM类型"><a href="#LLM类型" class="headerlink" title="LLM类型"></a>LLM类型</h1><h2 id="中文大模型"><a href="#中文大模型" class="headerlink" title="中文大模型"></a>中文大模型</h2><h3 id="通义千问"><a href="#通义千问" class="headerlink" title="通义千问"></a>通义千问</h3><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>通义千问-7B（Qwen-7B） 是阿里云研发的通义千问大模型系列的70亿参数规模的模型。Qwen-7B是基于Transformer的大语言模型, 在超大规模的预训练数据上进行训练得到。预训练数据类型多样，覆盖广泛，包括大量网络文本、专业书籍、代码等。同时，在Qwen-7B的基础上，我们使用对齐机制打造了基于大语言模型的AI助手Qwen-7B-Chat。Qwen-7B系列模型的特点包括：</p>
+<ol>
+<li><strong>大规模高质量预训练数据</strong>：我们使用了超过2.2万亿token的自建大规模预训练数据集进行语言模型的预训练。数据集包括文本和代码等多种数据类型，覆盖通用领域和专业领域。</li>
+<li><strong>优秀的模型性能</strong>：相比同规模的开源模型，Qwen-7B在多个评测数据集上具有显著优势，甚至超出12-13B等更大规模的模型。评测评估的能力范围包括自然语言理解与生成、数学运算解题、代码生成等。</li>
+<li><strong>更好地支持多语言</strong>：基于更大词表的分词器在分词上更高效，同时它对其他语言表现更加友好。用户可以在Qwen-7B的基础上更方便地训练特定语言的7B语言模型。</li>
+<li><strong>8K的上下文长度</strong>：Qwen-7B及Qwen-7B-Chat均能支持8K的上下文长度, 允许用户输入更长的prompt。</li>
+<li><strong>支持插件调用</strong>：Qwen-7B-Chat针对插件调用相关的对齐数据做了特定优化，当前模型能有效调用插件以及升级为Agent。</li>
+</ol>
+<h5 id="模型基座"><a href="#模型基座" class="headerlink" title="模型基座"></a><strong>模型基座</strong></h5><p>基于transformer的纯解码器语言模型，其架构类似于LLaMA系列模型。和标准transformer不同之处在于：</p>
+<blockquote>
+<ol>
+<li>using <strong><u>untied embedding</u></strong></li>
+<li>using <strong><u>rotary positional embedding</u></strong></li>
+<li><strong><u>no biases</u></strong> except for QKV in attention</li>
+<li><strong><u>RMSNorm</u></strong> instead of LayerNorm</li>
+<li><strong><u>SwiGLU</u></strong> instead of ReLU</li>
+<li>adopting <strong><u>flash attention</u></strong> to accelerate training.</li>
+</ol>
+<p>The model has 32 layers, the embedding dimension is 4096, and the number of attention heads is 32.</p>
+</blockquote>
+<h5 id="预训练Qwen-7B"><a href="#预训练Qwen-7B" class="headerlink" title="预训练Qwen-7B"></a><strong>预训练Qwen-7B</strong></h5><blockquote>
+<p><strong>预训练</strong>：超过2.2万亿个token上进行预训练，从公开可用的数据中获得2048个上下文长度，涵盖一般和专业领域，重点是英语和汉语</p>
+<p><strong>预训练数据</strong>处理：我们的数据包括来自公开来源的混合数据，主要包括网络文档和代码文件。此外，数据是多语种的，大部分是英语和汉语。我们努力使用一系列模型来排除低质量或被认为不适合预训练的数据，例如 NSFW 内容。对于数学推理，我们包括来自<a target="_blank" rel="noopener" href="https://github.com/ofa-sys/gsm8k-ScRel"> gsm8k-scRel </a>的 RFT 数据。最终数据进行了全局模糊重复（global fuzzy deduplication）数据删除。通过大量的消融实验，优化了预训练语料库的组合。</p>
+<p><strong>tokenization</strong>：词表 151,851 tokens，它首先考虑了汉语、英语和代码数据的高效编码，而且对多语言更加友好，使用户可以直接提高某些语言的能力，而无需扩充词汇量。它按对数字进行分割（单个），并调用 <a target="_blank" rel="noopener" href="https://github.com/openai/tiktoken">tiktoken</a>  tokenizer库以进行有效的tokenization。tokenization后的数据总量超过2.2万亿个token。</p>
+<p>我们随机选择每种语言的100万个文档语料库来测试和比较不同模型的编码压缩率(使用支持100种语言的 XLM-R 作为基值1，图中未显示)。可以看出，Qwen-7B 在保证汉语、英语和代码的高效解码的同时，还能在其他多种语言(如 th，he，ar，ko，vi，ja，tr，id，pl，ru，nl，pt，it，de，es，fr 等)中获得较高的压缩率，使模型具有很强的可扩展性，以及这些语言的高训练和推理效率。</p>
+<p><strong>训练细节</strong>: </p>
+<blockquote>
+<p>The model is trained using the AdamW optimizer, with<br>$$<br>\beta_1&#x3D;0.9, \beta_2&#x3D;0.95, \epsilon&#x3D;10^{-6}<br>$$<br>. The sequence length is 2048, and the batch size is 2048, which means each optimization step accumulates over 4 million tokens. We use a cosine learning rate schedule, with a warm-up of 2000 steps, a peak learning rate of 3×10^−4, and a minimum learning rate of 10% of the peak learning rate. We use a weight decay of 0.1 and gradient clipping of 1.0. The training adopts mixed precision training with <code>bfloat16</code>.</p>
+</blockquote>
+<p>评估：</p>
+<p>【1】World knowledge（世界知识）</p>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2305.08322"> <strong>C-Eval</strong> </a>是一个通用的评估基准，用于测试预训练的中文模型的常识能力。它涵盖了四个主要方向的52个学科: 人文、社会科学、科学、技术、工程和其他专业（humanities, social sciences, STEM, and other specialties）。根据标准实践，以validation样本作为少样本prompt的来源，对 Qwen-7B 预训练模型的5-shot验证集和测试集精度进行了评估。</p>
+<p><strong>MMLU</strong> 是目前评价英语理解能力最公认的基准之一，涵盖了不同学术领域和难度水平的57个子任务。</p>
+<p>【2】Coding（编程）</p>
+<p>**<a target="_blank" rel="noopener" href="https://github.com/openai/human-eval">HumanEval</a>**：Pass@1</p>
+<p>【3】Math（数学）</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/openai/grade-school-math">GSM8K</a> (8-shot)：Accuracy</p>
+<p>【4】Natural language processing 自然语言处理（翻译）</p>
+<p>WMT22 zh-en and en-zh (5-shot BLEU)</p>
+<p>【5】Long-context inference 长文本外推</p>
+</blockquote>
+<h5 id="微调Qwen-7B-Chat"><a href="#微调Qwen-7B-Chat" class="headerlink" title="微调Qwen-7B-Chat"></a><strong>微调Qwen-7B-Chat</strong></h5><blockquote>
+<p>**对齐数据 ** :<br>这些数据包括常见的指令风格的对话，以及涉及大量标注工作的面向安全和服务的数据。<br>– 指令数据包括广泛的能力，如写作，问题回答，头脑风暴和计划，内容理解，总结，自然语言处理和编码。<br>– 安全数据试图防止模型生成有害和不适当的内容。<br>– 服务数据尝试使用特定的会话模式来增强模型，这些模式可以被解析以调用和合并外部系统。</p>
+<p><strong>数据格式</strong> :<br>由于数据由会话轮数组成，我们使用<a target="_blank" rel="noopener" href="https://github.com/openai/openai-python/blob/main/ChatML.md"> chatML </a>格式将它们排列成文本，这是一种元语言，既可以描述元数据(例如，roles) ，也可以描述每轮的内容。<br>目前，现有的角色包括系统、用户和助手(system, user, and assistant)。</p>
+<p><strong>模型训练细节：</strong></p>
+<p>使用因果语言建模目标（causal language modeling）对模型进行微调，除了user轮次内容中的token。</p>
+<p>该模型使用 AdamW 优化器进行训练，其中 $beta _ 1 &#x3D; 0.9，beta _ 2 &#x3D; 0.95，epsilon &#x3D; 10 ^ {-6} $。</p>
+<p>序列长度限制为2048，批量大小为128。</p>
+<p>该模型经过4000个步骤的训练，在前1430个步骤中，学习速率被加热到 $1乘以10 ^ { -5} $。</p>
+<p>我们使用0.1的权重衰减，0.1的辍学，和1.0的梯度裁剪。</p>
+<p><strong>评估：</strong></p>
+<p>【1】World knowledge</p>
+<p>由于微调使用的数据集比预训练小得多，人类对世界知识的理解可能有限，我们还使用 C-Eval 和 MMLU 以zero-shot和生成的方式评估 Qwen-7B-Chat 的世界知识。</p>
+<p>C-Eval validation set：zero-shot accuracy</p>
+<p>MMLU：zero-shot accuracy</p>
+<p>【2】Coding</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/openai/human-eval">HumanEval</a>：zero-shot Pass@1</p>
+<p>【3】Math</p>
+<p>GSM8K：accuracy</p>
+<p>【4】Service</p>
+<p>Tool Selection (Acc.↑)、Tool Input (Rouge-L↑) 、 False Positive Error↓  </p>
+</blockquote>
+<h4 id="评测表现"><a href="#评测表现" class="headerlink" title="评测表现"></a>评测表现</h4><p>Qwen-7B在多个全面评估自然语言理解与生成、数学运算解题、代码生成等能力的评测数据集上，包括MMLU、C-Eval、GSM8K、HumanEval、WMT22等，均超出了同规模大语言模型的表现，甚至超出了如12-13B参数等更大规模的语言模型。</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>MMLU</th>
+<th>C-Eval</th>
+<th>GSM8K</th>
+<th>HumanEval</th>
+<th>WMT22 (en-zh)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LLaMA-7B</td>
+<td>35.1</td>
+<td>-</td>
+<td>11.0</td>
+<td>10.5</td>
+<td>8.7</td>
+</tr>
+<tr>
+<td>LLaMA 2-7B</td>
+<td>45.3</td>
+<td>-</td>
+<td>14.6</td>
+<td>12.8</td>
+<td>17.9</td>
+</tr>
+<tr>
+<td>Baichuan-7B</td>
+<td>42.3</td>
+<td>42.8</td>
+<td>9.7</td>
+<td>9.2</td>
+<td>26.6</td>
+</tr>
+<tr>
+<td>ChatGLM2-6B</td>
+<td>47.9</td>
+<td>51.7</td>
+<td>32.4</td>
+<td>9.2</td>
+<td>-</td>
+</tr>
+<tr>
+<td>InternLM-7B</td>
+<td>51.0</td>
+<td>52.8</td>
+<td>31.2</td>
+<td>10.4</td>
+<td>14.8</td>
+</tr>
+<tr>
+<td>Baichuan-13B</td>
+<td>51.6</td>
+<td>53.6</td>
+<td>26.6</td>
+<td>12.8</td>
+<td>30.0</td>
+</tr>
+<tr>
+<td>LLaMA-13B</td>
+<td>46.9</td>
+<td>35.5</td>
+<td>17.8</td>
+<td>15.8</td>
+<td>12.0</td>
+</tr>
+<tr>
+<td>LLaMA 2-13B</td>
+<td>54.8</td>
+<td>-</td>
+<td>28.7</td>
+<td>18.3</td>
+<td>24.2</td>
+</tr>
+<tr>
+<td>ChatGLM2-12B</td>
+<td>56.2</td>
+<td><strong>61.6</strong></td>
+<td>40.9</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><strong>Qwen-7B</strong></td>
+<td><strong>56.7</strong></td>
+<td>59.6</td>
+<td><strong>51.6</strong></td>
+<td><strong>24.4</strong></td>
+<td><strong>30.6</strong></td>
+</tr>
+</tbody></table>
+<h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>在开始前，请确保你已经配置好环境并安装好相关的代码包。最重要的是，确保你满足上述要求，然后安装相关的依赖库。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+
+<p>如果你的显卡支持fp16或bf16精度，我们还推荐安装<a target="_blank" rel="noopener" href="https://github.com/Dao-AILab/flash-attention">flash-attention</a>来提高你的运行效率以及降低显存占用。(<strong>flash-attention只是可选项，不安装也可正常运行该项目</strong>)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone -b v1.0.8 https://github.com/Dao-AILab/flash-attention</span><br><span class="line">cd flash-attention &amp;&amp; pip install .</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">下方安装可选，安装可能比较缓慢。</span></span><br><span class="line">pip install csrc/layer_norm</span><br><span class="line">pip install csrc/rotary</span><br></pre></td></tr></table></figure>
+
+<p>接下来可以开始使用Transformers或者ModelScope来使用我们的模型。</p>
+<h5 id="🤗-Transformers"><a href="#🤗-Transformers" class="headerlink" title="🤗 Transformers"></a>🤗 Transformers</h5><p>如希望使用Qwen-7B-chat进行推理，所需要写的只是如下所示的数行代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoModelForCausalLM, AutoTokenizer</span><br><span class="line"><span class="keyword">from</span> transformers.generation <span class="keyword">import</span> GenerationConfig</span><br><span class="line"></span><br><span class="line"><span class="comment"># 请注意：分词器默认行为已更改为默认关闭特殊token攻击防护。</span></span><br><span class="line">tokenizer = AutoTokenizer.from_pretrained(<span class="string">&quot;Qwen/Qwen-7B-Chat&quot;</span>, trust_remote_code=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开bf16精度，A100、H100、RTX3060、RTX3070等显卡建议启用以节省显存</span></span><br><span class="line"><span class="comment"># model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-7B-Chat&quot;, device_map=&quot;auto&quot;, trust_remote_code=True, bf16=True).eval()</span></span><br><span class="line"><span class="comment"># 打开fp16精度，V100、P100、T4等显卡建议启用以节省显存</span></span><br><span class="line"><span class="comment"># model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-7B-Chat&quot;, device_map=&quot;auto&quot;, trust_remote_code=True, fp16=True).eval()</span></span><br><span class="line"><span class="comment"># 使用CPU进行推理，需要约32GB内存</span></span><br><span class="line"><span class="comment"># model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-7B-Chat&quot;, device_map=&quot;cpu&quot;, trust_remote_code=True).eval()</span></span><br><span class="line"><span class="comment"># 默认使用自动模式，根据设备自动选择精度</span></span><br><span class="line">model = AutoModelForCausalLM.from_pretrained(<span class="string">&quot;Qwen/Qwen-7B-Chat&quot;</span>, device_map=<span class="string">&quot;auto&quot;</span>, trust_remote_code=<span class="literal">True</span>).<span class="built_in">eval</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可指定不同的生成长度、top_p等相关超参</span></span><br><span class="line">model.generation_config = GenerationConfig.from_pretrained(<span class="string">&quot;Qwen/Qwen-7B-Chat&quot;</span>, trust_remote_code=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第一轮对话 1st dialogue turn</span></span><br><span class="line">response, history = model.chat(tokenizer, <span class="string">&quot;你好&quot;</span>, history=<span class="literal">None</span>)</span><br><span class="line"><span class="built_in">print</span>(response)</span><br><span class="line"><span class="comment"># 你好！很高兴为你提供帮助。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 第二轮对话 2nd dialogue turn</span></span><br><span class="line">response, history = model.chat(tokenizer, <span class="string">&quot;给我讲一个年轻人奋斗创业最终取得成功的故事。&quot;</span>, history=history) </span><br><span class="line"><span class="built_in">print</span>(response)</span><br><span class="line"><span class="comment"># 这是一个关于一个年轻人奋斗创业最终取得成功的故事。</span></span><br><span class="line"><span class="comment"># 故事的主人公叫李明，他来自一个普通的家庭，父母都是普通的工人。从小，李明就立下了一个目标：要成为一名成功的企业家。</span></span><br><span class="line"><span class="comment"># 为了实现这个目标，李明勤奋学习，考上了大学。在大学期间，他积极参加各种创业比赛，获得了不少奖项。他还利用课余时间去实习，积累了宝贵的经验。</span></span><br><span class="line"><span class="comment"># 毕业后，李明决定开始自己的创业之路。他开始寻找投资机会，但多次都被拒绝了。然而，他并没有放弃。他继续努力，不断改进自己的创业计划，并寻找新的投资机会。</span></span><br><span class="line"><span class="comment"># 最终，李明成功地获得了一笔投资，开始了自己的创业之路。他成立了一家科技公司，专注于开发新型软件。在他的领导下，公司迅速发展起来，成为了一家成功的科技企业。</span></span><br><span class="line"><span class="comment"># 李明的成功并不是偶然的。他勤奋、坚韧、勇于冒险，不断学习和改进自己。他的成功也证明了，只要努力奋斗，任何人都有可能取得成功。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 第三轮对话 3rd dialogue turn</span></span><br><span class="line">response, history = model.chat(tokenizer, <span class="string">&quot;给这个故事起一个标题&quot;</span>, history=history)</span><br><span class="line"><span class="built_in">print</span>(response)</span><br><span class="line"><span class="comment"># 《奋斗创业：一个年轻人的成功之路》</span></span><br></pre></td></tr></table></figure>
+
+<p>运行Qwen-7B同样非常简单。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoModelForCausalLM, AutoTokenizer</span><br><span class="line"><span class="keyword">from</span> transformers.generation <span class="keyword">import</span> GenerationConfig</span><br><span class="line"></span><br><span class="line">tokenizer = AutoTokenizer.from_pretrained(<span class="string">&quot;Qwen/Qwen-7B&quot;</span>, trust_remote_code=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打开bf16精度，A100、H100、RTX3060、RTX3070等显卡建议启用以节省显存</span></span><br><span class="line"><span class="comment"># model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-7B&quot;, device_map=&quot;auto&quot;, trust_remote_code=True, bf16=True).eval()</span></span><br><span class="line"><span class="comment"># 打开fp16精度，V100、P100、T4等显卡建议启用以节省显存</span></span><br><span class="line"><span class="comment"># model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-7B&quot;, device_map=&quot;auto&quot;, trust_remote_code=True, fp16=True).eval()</span></span><br><span class="line"><span class="comment"># 使用CPU进行推理，需要约32GB内存</span></span><br><span class="line"><span class="comment"># model = AutoModelForCausalLM.from_pretrained(&quot;Qwen/Qwen-7B&quot;, device_map=&quot;cpu&quot;, trust_remote_code=True).eval()</span></span><br><span class="line"><span class="comment"># 默认使用自动模式，根据设备自动选择精度</span></span><br><span class="line">model = AutoModelForCausalLM.from_pretrained(<span class="string">&quot;Qwen/Qwen-7B&quot;</span>, device_map=<span class="string">&quot;auto&quot;</span>, trust_remote_code=<span class="literal">True</span>).<span class="built_in">eval</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 可指定不同的生成长度、top_p等相关超参</span></span><br><span class="line">model.generation_config = GenerationConfig.from_pretrained(<span class="string">&quot;Qwen/Qwen-7B&quot;</span>, trust_remote_code=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">inputs = tokenizer(<span class="string">&#x27;蒙古国的首都是乌兰巴托（Ulaanbaatar）\n冰岛的首都是雷克雅未克（Reykjavik）\n埃塞俄比亚的首都是&#x27;</span>, return_tensors=<span class="string">&#x27;pt&#x27;</span>)</span><br><span class="line">inputs = inputs.to(model.device)</span><br><span class="line">pred = model.generate(**inputs)</span><br><span class="line"><span class="built_in">print</span>(tokenizer.decode(pred.cpu()[<span class="number">0</span>], skip_special_tokens=<span class="literal">True</span>))</span><br><span class="line"><span class="comment"># 蒙古国的首都是乌兰巴托（Ulaanbaatar）\n冰岛的首都是雷克雅未克（Reykjavik）\n埃塞俄比亚的首都是亚的斯亚贝巴（Addis Ababa）...</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="Tokenization"><a href="#Tokenization" class="headerlink" title="Tokenization"></a>Tokenization</h5><blockquote>
+<p>注：作为术语的“tokenization”在中文中尚无共识的概念对应，本文档采用英文表达以利说明。</p>
+</blockquote>
+<p>基于tiktoken的tokenizer有别于其他分词器，比如sentencepiece tokenizer。尤其在微调阶段，需要特别注意特殊token的使用。关于tokenizer的更多信息，以及微调时涉及的相关使用，请参阅<a target="_blank" rel="noopener" href="https://github.com/QwenLM/Qwen-7B/blob/main/tokenization_note_zh.md">文档</a>。</p>
+<p>Qwen-7B采用**<u>UTF-8字节级别的BPE tokenization方式</u>**，并依赖<code>tiktoken</code>这一高效的软件包执行分词。 Qwen-7B中有两类token，即源于BPE、<code>bytes</code>类型的普通token和特殊指定、<code>str</code>类型的特殊token。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoTokenizer</span><br><span class="line"></span><br><span class="line">tokenizer = AutoTokenizer.from_pretrained(<span class="string">&#x27;Qwen/Qwen-7B&#x27;</span>, trust_remote_code=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<h6 id="普通token"><a href="#普通token" class="headerlink" title="普通token"></a>普通token</h6><p>普通token源于BPE，是在UTF-8编码的文本字节序列上学习得到的。 尽管基于字节序列的方式保证了所有文本均可被tokenize且没有未登录token问题，但处理罕见文本时有可能回退到字节级别的编码。 由于从字节序列解码为文本时，<code>errors</code>参数设为<code>replace</code>，处理不完整的token序列可能会遇到UTF-8解码错误，表象是生成中包含“替换字符”(�)。 **<u>这一行为可以通过将<code>errors</code>参数设为<code>ignore</code>来规避</u>**。 一次性修改可以传入tokenizer的<code>decode</code>函数，持久性修改可以传入tokenizer的初始化函数，请注意<code>decode</code>的配置优先级更高。 <code>errors</code>的可选值，请参阅<a target="_blank" rel="noopener" href="https://docs.python.org/3/library/stdtypes.html#bytes.decode">Python文档</a>.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>tokenizer.decode([<span class="number">51461</span>])</span><br><span class="line"><span class="string">&#x27; �&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>tokenizer.convert_ids_to_tokens([<span class="number">51461</span>])</span><br><span class="line">[<span class="string">b&#x27; \xe6\xa0&#x27;</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">b&#x27; \xe6\xa0&#x27;</span>.decode(<span class="string">&quot;utf-8&quot;</span>, errors=<span class="string">&#x27;replace&#x27;</span>)</span><br><span class="line"><span class="string">&#x27; �&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>tokenizer.decode([<span class="number">51461</span>, <span class="number">117</span>])</span><br><span class="line"><span class="string">&#x27; 根&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>tokenizer.convert_ids_to_tokens([<span class="number">51461</span>, <span class="number">117</span>])</span><br><span class="line">[<span class="string">b&#x27; \xe6\xa0&#x27;</span>, <span class="string">b&#x27;\xb9&#x27;</span>]</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">b&#x27; \xe6\xa0\xb9&#x27;</span>.decode(<span class="string">&quot;utf-8&quot;</span>, errors=<span class="string">&#x27;replace&#x27;</span>)</span><br><span class="line"><span class="string">&#x27; 根&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>bytes</code>类型的普通token到id的映射可以通过<code>tokenizer.get_vocab()</code>获取。 尚不支持也不推荐向tokenizer增加普通token。</p>
+<h6 id="特殊token"><a href="#特殊token" class="headerlink" title="特殊token"></a>特殊token</h6><p>特殊token用以给模型传递特殊信号，如到达文本末尾。 理论上，输入文本中不包含特殊token，它们仅在tokenization后由开发者手动加入。 特殊token的字面表达，如表示文本结束的<code>&lt;|endoftext|&gt;</code>，仅便于指代特殊token，不意味着它们在输入文本空间中。 目前，训练中使用的、已经有固定含义的、不应做它用的特殊token，Qwen-7B中有<code>&lt;|endoftext|&gt;</code>，Qwen-7B-Chat中有<code>&lt;|endoftext|&gt;</code>、<code>&lt;|im_start|&gt;</code>以及<code>&lt;|im_end|&gt;</code>。 但词表中也留有供扩展的特殊token位，可用<code>&lt;|extra_0|&gt;</code>到<code>&lt;|extra_204|&gt;</code>来指代。 <code>str</code>类型的特殊token字面表达到id的映射，可以通过<code>tokenizer.special_tokens</code>获取。</p>
+<p>对于提供的模型参数(Qwen-7B和Qwen-7B-Chat)而言，诸如<code>bos</code>、<code>eos</code>、<code>unk</code>、<code>pad</code>、<code>mask</code>、<code>sep</code>等的特殊token的概念并不适用。 特例是<code>pad</code>，由于这个token理论上并不参与模型计算，所以可以使用任意token表达这一概念。 但保险起见，目前可在tokenizer初始化时设定的特殊token，仅可使用已知的特殊token字面表达，即<code>&lt;|endoftext|&gt;</code>、<code>&lt;|im_start|&gt;</code>、<code>&lt;|im_end|&gt;</code>和<code>&lt;|extra_0|&gt;</code>到<code>&lt;|extra_204|&gt;</code>。 对于微调或者其它需要这些token才能运行的框架，可以如下配置</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoTokenizer</span><br><span class="line"></span><br><span class="line">tokenizer = AutoTokenizer.from_pretrained(<span class="string">&#x27;Qwen/Qwen-7B&#x27;</span>, trust_remote_code=<span class="literal">True</span>, pad_token=<span class="string">&#x27;&lt;|endoftext|&gt;&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意: 对于提供的训练好的模型，设置诸如<code>bos</code>、<code>eos</code>、<code>unk</code>之类的没有意义，即模型不需要这些概念。 如果设置了这些token，但没有相应的微调这些token以让模型理解其含义，未知行为可能被触发。 特别时，不应混淆<code>&lt;|endoftext|&gt;</code>和<code>eos</code>的概念，除非应用场景中它们的实际含义是一致的，即句子末尾等价于文本末尾。</p>
+</blockquote>
+<p><strong>注入攻击防御</strong></p>
+<p>由于特殊token和普通token概念上的差异，如果输入文本中含有特殊token的字面表达该如何处理？ 以下面文本为例</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&lt;|endoftext|&gt;&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>其正确的tokenization为</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ids:[<span class="number">1350</span>, <span class="number">9639</span>, <span class="number">91</span>, <span class="number">8691</span>, <span class="number">723</span>, <span class="number">427</span>, <span class="number">91</span>, <span class="number">82598</span>]</span><br><span class="line">tokens: [<span class="string">b&#x27;print&#x27;</span>, <span class="string">b&#x27;(&quot;&lt;&#x27;</span>, <span class="string">b&#x27;|&#x27;</span>, <span class="string">b&#x27;endo&#x27;</span>, <span class="string">b&#x27;ft&#x27;</span>, <span class="string">b&#x27;ext&#x27;</span>, <span class="string">b&#x27;|&#x27;</span>, <span class="string">b&#x27;&gt;&quot;)&#x27;</span>]</span><br></pre></td></tr></table></figure>
+
+<p>不是</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ids: [<span class="number">1350</span>, <span class="number">445</span>, <span class="number">151643</span>, <span class="number">899</span>]</span><br><span class="line">tokens: [<span class="string">b&#x27;print&#x27;</span>, <span class="string">b&#x27;(&quot;&#x27;</span>, <span class="string">&#x27;&lt;|endoftext|&gt;&#x27;</span>, <span class="string">b&#x27;&quot;)&#x27;</span>]</span><br></pre></td></tr></table></figure>
+
+<p>默认行为曾是正确的，即输入文本中任何字符一律按普通token处理，特殊token应由开发者在tokenization人工处理。 然后，这与社区中的实践似有差异，为开发者复用代码增加了额外适配步骤。</p>
+<p>默认行为已被调整为从输入文本中解析特殊token的字面表达。 如需启用注入攻击防御，请传入参数<code>allowed_special=set()</code>：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>tokenizer(<span class="string">&#x27;print(&quot;&lt;|endoftext|&gt;&quot;)&#x27;</span>, allowed_special=<span class="built_in">set</span>())</span><br><span class="line">&#123;<span class="string">&#x27;input_ids&#x27;</span>: [<span class="number">1350</span>, <span class="number">9639</span>, <span class="number">91</span>, <span class="number">8691</span>, <span class="number">723</span>, <span class="number">427</span>, <span class="number">91</span>, <span class="number">82598</span>], <span class="string">&#x27;token_type_ids&#x27;</span>: [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>], <span class="string">&#x27;attention_mask&#x27;</span>: [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这一行为可以更精细的调控，将<code>allowed_special</code>设计为<code>str</code>的集合即可：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>tokenizer(<span class="string">&#x27;print(&quot;&lt;|extra_0|&gt;&quot;)&lt;|endoftext|&gt;&#x27;</span>, allowed_special=&#123;<span class="string">&#x27;&lt;|endoftext|&gt;&#x27;</span>&#125;)</span><br><span class="line">&#123;<span class="string">&#x27;input_ids&#x27;</span>: [<span class="number">1350</span>, <span class="number">9639</span>, <span class="number">91</span>, <span class="number">15460</span>, <span class="number">62</span>, <span class="number">15</span>, <span class="number">91</span>, <span class="number">82598</span>, <span class="number">151643</span>], <span class="string">&#x27;token_type_ids&#x27;</span>: [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>], <span class="string">&#x27;attention_mask&#x27;</span>: [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果希望输入中遇到特殊token的字面表达时，获得更直接的提醒，通过配置<code>disallowed_special</code>可以让tokenizer直接触发异常：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>tokenizer(<span class="string">&#x27;print(&quot;&lt;|extra_0|&gt;&quot;)&lt;|endoftext|&gt;&#x27;</span>, allowed_special=&#123;<span class="string">&#x27;&lt;|endoftext|&gt;&#x27;</span>&#125;, disallowed_special=(<span class="string">&#x27;&lt;|extra_0|&gt;&#x27;</span>, ))</span><br><span class="line">...</span><br><span class="line">ValueError: Encountered text corresponding to disallowed special token <span class="string">&#x27;&lt;|extra_0|&gt;&#x27;</span>.</span><br><span class="line">If you want this text to be encoded <span class="keyword">as</span> a special token, <span class="keyword">pass</span> it to `allowed_special`, e.g. `allowed_special=&#123;<span class="string">&#x27;&lt;|extra_0|&gt;&#x27;</span>, ...&#125;`.</span><br><span class="line">If you want this text to be encoded <span class="keyword">as</span> normal text, disable the check <span class="keyword">for</span> this token by passing `disallowed_special=(enc.special_tokens_set - &#123;<span class="string">&#x27;&lt;|extra_0|&gt;&#x27;</span>&#125;)`.</span><br><span class="line">To disable this check <span class="keyword">for</span> <span class="built_in">all</span> special tokens, <span class="keyword">pass</span> `disallowed_special=()`.</span><br></pre></td></tr></table></figure>
+
+<p>更多关于<code>allowed_special</code>和<code>disallowed_special</code>的信息, 请参阅<a target="_blank" rel="noopener" href="https://github.com/openai/tiktoken/blob/095924e02c85617df6889698d94515f91666c7ea/tiktoken/core.py#L75"><code>tiktoken</code>代码</a>.</p>
+<p>新的默认行为与以下设定等价</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>tokenizer(<span class="string">&#x27;print(&quot;&lt;|endoftext|&gt;&quot;)&#x27;</span>, allowed_special=<span class="string">&quot;all&quot;</span>, disallowed_special=())</span><br><span class="line">&#123;<span class="string">&#x27;input_ids&#x27;</span>: [<span class="number">1350</span>, <span class="number">445</span>, <span class="number">151643</span>, <span class="number">899</span>], <span class="string">&#x27;token_type_ids&#x27;</span>: [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>], <span class="string">&#x27;attention_mask&#x27;</span>: [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="量化"><a href="#量化" class="headerlink" title="量化"></a>量化</h5><p>如希望使用更低精度的量化模型，如4比特和8比特的模型，我们提供了简单的示例来说明如何快速使用量化模型。在开始前，确保你已经安装了<code>bitsandbytes</code>。请注意，<code>bitsandbytes</code>的安装要求是：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**Requirements** Python &gt;=3.8. Linux distribution (Ubuntu, MacOS, etc.) + CUDA &gt; 10.0.</span><br></pre></td></tr></table></figure>
+
+<p>Windows用户需安装特定版本的<code>bitsandbytes</code>，可选项包括<a target="_blank" rel="noopener" href="https://github.com/jllllll/bitsandbytes-windows-webui/releases/tag/wheels">bitsandbytes-windows-webui</a>。</p>
+<p>你只需要在<code>AutoModelForCausalLM.from_pretrained</code>中添加你的量化配置，即可使用量化模型。如下所示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoModelForCausalLM, BitsAndBytesConfig</span><br><span class="line"></span><br><span class="line"><span class="comment"># quantization configuration for NF4 (4 bits)</span></span><br><span class="line">quantization_config = BitsAndBytesConfig(</span><br><span class="line">    load_in_4bit=<span class="literal">True</span>,</span><br><span class="line">    bnb_4bit_quant_type=<span class="string">&#x27;nf4&#x27;</span>,</span><br><span class="line">    bnb_4bit_compute_dtype=torch.bfloat16</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># quantization configuration for Int8 (8 bits)</span></span><br><span class="line">quantization_config = BitsAndBytesConfig(load_in_8bit=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">model = AutoModelForCausalLM.from_pretrained(</span><br><span class="line">    args.checkpoint_path,</span><br><span class="line">    device_map=<span class="string">&quot;cuda:0&quot;</span>,</span><br><span class="line">    quantization_config=quantization_config,</span><br><span class="line">    max_memory=max_memory,</span><br><span class="line">    trust_remote_code=<span class="literal">True</span>,</span><br><span class="line">).<span class="built_in">eval</span>()</span><br></pre></td></tr></table></figure>
+
+<p>上述方法可以让我们将模型量化成<code>NF4</code>和<code>Int8</code>精度的模型进行读取，帮助我们节省显存开销。我们也提供了相关性能数据。我们发现尽管模型在效果上存在损失，但模型的显存开销大幅降低。</p>
+<table>
+<thead>
+<tr>
+<th>Precision</th>
+<th>MMLU</th>
+<th>Memory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>BF16</td>
+<td>56.7</td>
+<td>16.2G</td>
+</tr>
+<tr>
+<td>Int8</td>
+<td>52.8</td>
+<td>10.1G</td>
+</tr>
+<tr>
+<td>NF4</td>
+<td>48.9</td>
+<td>7.4G</td>
+</tr>
+</tbody></table>
+<h5 id="工具调用"><a href="#工具调用" class="headerlink" title="工具调用"></a>工具调用</h5><p>Qwen-7B-Chat针对包括API、数据库、模型等工具在内的调用进行了优化。用户可以开发基于Qwen-7B的LangChain、Agent甚至Code Interpreter。我们在内部的即将开源的评测数据集上测试模型的工具调用能力，并发现Qwen-7B-Chat能够取得稳定的表现。</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Tool Selection (Acc.↑)</th>
+<th>Tool Input (Rouge-L↑)</th>
+<th>False Positive Error↓</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GPT-4</td>
+<td>95%</td>
+<td><strong>0.90</strong></td>
+<td>15%</td>
+</tr>
+<tr>
+<td>GPT-3.5</td>
+<td>85%</td>
+<td>0.88</td>
+<td>75%</td>
+</tr>
+<tr>
+<td><strong>Qwen-7B</strong></td>
+<td><strong>99%</strong></td>
+<td>0.89</td>
+<td><strong>8.5%</strong></td>
+</tr>
+</tbody></table>
+<p>我们提供了文档说明如何根据ReAct Prompting的原则写作你的prompt。</p>
+<p>For how to write and use prompts for ReAct Prompting, please refer to <a target="_blank" rel="noopener" href="https://github.com/QwenLM/Qwen-7B/blob/main/examples/react_prompt.md">the ReAct examples</a>。</p>
+<p>此外，我们还提供了实验结果表明我们的模型扮演Agent的能力。请阅读相关文档<a target="_blank" rel="noopener" href="https://huggingface.co/docs/transformers/transformers_agents">链接</a>了解更多信息。模型在Hugging Face提供的评测数据集上表现如下：</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Tool Selection↑</th>
+<th>Tool Used↑</th>
+<th>Code↑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GPT-4</td>
+<td><strong>100</strong></td>
+<td><strong>100</strong></td>
+<td><strong>97.41</strong></td>
+</tr>
+<tr>
+<td>GPT-3.5</td>
+<td>95.37</td>
+<td>96.30</td>
+<td>87.04</td>
+</tr>
+<tr>
+<td>StarCoder-15.5B</td>
+<td>87.04</td>
+<td>87.96</td>
+<td>68.89</td>
+</tr>
+<tr>
+<td><strong>Qwen-7B</strong></td>
+<td>90.74</td>
+<td>92.59</td>
+<td>74.07</td>
+</tr>
+</tbody></table>
+<h5 id="长文本理解"><a href="#长文本理解" class="headerlink" title="长文本理解"></a>长文本理解</h5><p>我们引入了**<u><em>NTK插值、窗口注意力、LogN注意力缩放</em></u>**等技术来提升模型的上下文长度并突破训练序列长度的限制。我们的模型已经突破8K的序列长度。通过arXiv数据集上的语言模型实验（PPL），我们发现Qwen-7B能够在长序列的设置下取得不错的表现。</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Sequence Length</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1024</td>
+<td>2048</td>
+<td>4096</td>
+<td>8192</td>
+<td>16384</td>
+<td></td>
+</tr>
+<tr>
+<td>Qwen-7B</td>
+<td><strong>4.23</strong></td>
+<td><strong>3.78</strong></td>
+<td>39.35</td>
+<td>469.81</td>
+<td>2645.09</td>
+</tr>
+<tr>
+<td>+ dynamic_ntk</td>
+<td><strong>4.23</strong></td>
+<td><strong>3.78</strong></td>
+<td>3.59</td>
+<td>3.66</td>
+<td>5.71</td>
+</tr>
+<tr>
+<td>+ dynamic_ntk + logn</td>
+<td><strong>4.23</strong></td>
+<td><strong>3.78</strong></td>
+<td><strong>3.58</strong></td>
+<td>3.56</td>
+<td>4.62</td>
+</tr>
+<tr>
+<td>+ dynamic_ntk + logn + local_attn</td>
+<td><strong>4.23</strong></td>
+<td><strong>3.78</strong></td>
+<td><strong>3.58</strong></td>
+<td><strong>3.49</strong></td>
+<td><strong>4.32</strong></td>
+</tr>
+</tbody></table>
+<p>仓库链接：<a target="_blank" rel="noopener" href="https://github.com/QwenLM/Qwen-7B/blob/main/tech_memo.md#introducing-qwen-7b-open-foundation-and-human-aligned-models-of-the-state-of-the-arts">https://github.com/QwenLM/Qwen-7B/blob/main/tech_memo.md#introducing-qwen-7b-open-foundation-and-human-aligned-models-of-the-state-of-the-arts</a></p>
+<h3 id="InternLM"><a href="#InternLM" class="headerlink" title="InternLM"></a>InternLM</h3><h3 id="Baichuan"><a href="#Baichuan" class="headerlink" title="Baichuan"></a>Baichuan</h3><h2 id="多语言大模型"><a href="#多语言大模型" class="headerlink" title="多语言大模型"></a>多语言大模型</h2><h3 id="LLaMa"><a href="#LLaMa" class="headerlink" title="LLaMa"></a>LLaMa</h3><h3 id="BLOOM"><a href="#BLOOM" class="headerlink" title="BLOOM"></a>BLOOM</h3><h3 id="Falcon"><a href="#Falcon" class="headerlink" title="Falcon"></a>Falcon</h3><h1 id="Agent相关"><a href="#Agent相关" class="headerlink" title="Agent相关"></a>Agent相关</h1><h2 id="HuggingFace-Agent"><a href="#HuggingFace-Agent" class="headerlink" title="HuggingFace Agent"></a>HuggingFace Agent</h2><p>使用大模型作为Agent，仅需自然语言就可调用HuggingFace中的模型，目前支持两种模式：</p>
+<ul>
+<li>run模式：单轮对话，没有上下文，单个prompt多tool组合调用能力好</li>
+<li>chat模式：多轮对话，有上下文，单次调用能力好，可能需要多次prompt实现多tool组合调用</li>
+</ul>
+<blockquote>
+<p>详见官方文档：<a target="_blank" rel="noopener" href="https://huggingface.co/docs/transformers/transformers_agents">Transformers Agents</a></p>
+</blockquote>
+<h3 id="使用通义千问作为Agent"><a href="#使用通义千问作为Agent" class="headerlink" title="使用通义千问作为Agent"></a>使用通义千问作为Agent</h3><h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install transformers</span><br></pre></td></tr></table></figure>
+
+<h4 id="构建QWenAgent"><a href="#构建QWenAgent" class="headerlink" title="构建QWenAgent"></a>构建QWenAgent</h4><p>以下代码便可实现QWenAgent：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoModelForCausalLM, AutoTokenizer, Agent</span><br><span class="line"><span class="keyword">from</span> transformers.generation <span class="keyword">import</span> GenerationConfig</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">QWenAgent</span>(<span class="title class_ inherited__">Agent</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    Agent that uses QWen model and tokenizer to generate code.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Args:</span></span><br><span class="line"><span class="string">        chat_prompt_template (`str`, *optional*):</span></span><br><span class="line"><span class="string">            Pass along your own prompt if you want to override the default template for the `chat` method. Can be the</span></span><br><span class="line"><span class="string">            actual prompt template or a repo ID (on the Hugging Face Hub). The prompt should be in a file named</span></span><br><span class="line"><span class="string">            `chat_prompt_template.txt` in this repo in this case.</span></span><br><span class="line"><span class="string">        run_prompt_template (`str`, *optional*):</span></span><br><span class="line"><span class="string">            Pass along your own prompt if you want to override the default template for the `run` method. Can be the</span></span><br><span class="line"><span class="string">            actual prompt template or a repo ID (on the Hugging Face Hub). The prompt should be in a file named</span></span><br><span class="line"><span class="string">            `run_prompt_template.txt` in this repo in this case.</span></span><br><span class="line"><span class="string">        additional_tools ([`Tool`], list of tools or dictionary with tool values, *optional*):</span></span><br><span class="line"><span class="string">            Any additional tools to include on top of the default ones. If you pass along a tool with the same name as</span></span><br><span class="line"><span class="string">            one of the default tools, that default tool will be overridden.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Example:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    ```py</span></span><br><span class="line"><span class="string">    agent = QWenAgent()</span></span><br><span class="line"><span class="string">    agent.run(&quot;Draw me a picture of rivers and lakes.&quot;)</span></span><br><span class="line"><span class="string">    ```</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, chat_prompt_template=<span class="literal">None</span>, run_prompt_template=<span class="literal">None</span>, additional_tools=<span class="literal">None</span></span>):</span><br><span class="line">        checkpoint = <span class="string">&quot;Qwen/Qwen-7B-Chat&quot;</span></span><br><span class="line">        self.tokenizer = AutoTokenizer.from_pretrained(checkpoint, trust_remote_code=<span class="literal">True</span>)</span><br><span class="line">        self.model = AutoModelForCausalLM.from_pretrained(checkpoint, device_map=<span class="string">&quot;auto&quot;</span>, trust_remote_code=<span class="literal">True</span>).cuda().<span class="built_in">eval</span>()</span><br><span class="line">        self.model.generation_config = GenerationConfig.from_pretrained(checkpoint, trust_remote_code=<span class="literal">True</span>) <span class="comment"># 可指定不同的生成长度、top_p等相关超参</span></span><br><span class="line">        self.model.generation_config.do_sample = <span class="literal">False</span>  <span class="comment"># greedy</span></span><br><span class="line">        </span><br><span class="line">        <span class="built_in">super</span>().__init__(</span><br><span class="line">            chat_prompt_template=chat_prompt_template,</span><br><span class="line">            run_prompt_template=run_prompt_template,</span><br><span class="line">            additional_tools=additional_tools,</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">generate_one</span>(<span class="params">self, prompt, stop</span>):</span><br><span class="line">        <span class="comment"># &quot;Human:&quot; 和 &quot;Assistant:&quot; 曾为通义千问的特殊保留字，需要替换为 &quot;_HUMAN_:&quot; 和 &quot;_ASSISTANT_:&quot;。这一问题将在未来版本修复。</span></span><br><span class="line">        prompt = prompt.replace(<span class="string">&quot;Human:&quot;</span>, <span class="string">&quot;_HUMAN_:&quot;</span>).replace(<span class="string">&quot;Assistant:&quot;</span>, <span class="string">&quot;_ASSISTANT_:&quot;</span>)</span><br><span class="line">        stop = [item.replace(<span class="string">&quot;Human:&quot;</span>, <span class="string">&quot;_HUMAN_:&quot;</span>).replace(<span class="string">&quot;Assistant:&quot;</span>, <span class="string">&quot;_ASSISTANT_:&quot;</span>) <span class="keyword">for</span> item <span class="keyword">in</span> stop]</span><br><span class="line"></span><br><span class="line">        result, _ = self.model.chat(self.tokenizer, prompt, history=<span class="literal">None</span>)</span><br><span class="line">        <span class="keyword">for</span> stop_seq <span class="keyword">in</span> stop:</span><br><span class="line">            <span class="keyword">if</span> result.endswith(stop_seq):</span><br><span class="line">                result = result[: -<span class="built_in">len</span>(stop_seq)]</span><br><span class="line"></span><br><span class="line">        result = result.replace(<span class="string">&quot;_HUMAN_:&quot;</span>, <span class="string">&quot;Human:&quot;</span>).replace(<span class="string">&quot;_ASSISTANT_:&quot;</span>, <span class="string">&quot;Assistant:&quot;</span>)</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">agent = QWenAgent()</span><br><span class="line">agent.run(<span class="string">&quot;Draw me a picture of rivers and lakes.&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h3><h4 id="Tools支持"><a href="#Tools支持" class="headerlink" title="Tools支持"></a>Tools支持</h4><p>HuggingFace Agent官方14个tool：</p>
+<ul>
+<li><strong>Document question answering</strong>: given a document (such as a PDF) in image format, answer a question on this document (Donut)</li>
+<li><strong>Text question answering</strong>: given a long text and a question, answer the question in the text (Flan-T5)</li>
+<li><strong>Unconditional image captioning</strong>: Caption the image! (BLIP)</li>
+<li><strong>Image question answering</strong>: given an image, answer a question on this image (VILT)</li>
+<li><strong>Image segmentation</strong>: given an image and a prompt, output the segmentation mask of that prompt (CLIPSeg)</li>
+<li><strong>Speech to text</strong>: given an audio recording of a person talking, transcribe the speech into text (Whisper)</li>
+<li><strong>Text to speech</strong>: convert text to speech (SpeechT5)</li>
+<li><strong>Zero-shot text classification</strong>: given a text and a list of labels, identify to which label the text corresponds the most (BART)</li>
+<li><strong>Text summarization</strong>: summarize a long text in one or a few sentences (BART)</li>
+<li><strong>Translation</strong>: translate the text into a given language (NLLB)</li>
+<li><strong>Text downloader</strong>: to download a text from a web URL</li>
+<li><strong>Text to image</strong>: generate an image according to a prompt, leveraging stable diffusion</li>
+<li><strong>Image transformation</strong>: transforms an image</li>
+<li><strong>Text to video</strong>: generate a small video according to a prompt, leveraging damo-vilab</li>
+</ul>
+<p>更多玩法参考HuggingFace官方文档<a target="_blank" rel="noopener" href="https://huggingface.co/docs/transformers/transformers_agents">Transformers Agents</a></p>
+<h3 id="Tools模型部署"><a href="#Tools模型部署" class="headerlink" title="Tools模型部署"></a>Tools模型部署</h3><p>部分工具涉及的模型HuggingFace已进行在线部署，仅需设置remote&#x3D;True便可实现在线调用：</p>
+<blockquote>
+<p>agent.run(xxx, remote&#x3D;True)</p>
+</blockquote>
+<p>HuggingFace没有在线部署的模型会自动下载checkpoint进行本地inference 网络原因偶尔连不上HuggingFace，请多次尝试</p>
+<h2 id="ReAct"><a href="#ReAct" class="headerlink" title="ReAct"></a>ReAct</h2><h3 id="ReAct-Prompting-示例"><a href="#ReAct-Prompting-示例" class="headerlink" title="ReAct Prompting 示例"></a>ReAct Prompting 示例</h3><p>来源：<a target="_blank" rel="noopener" href="https://github.com/QwenLM/Qwen-7B/blob/main/examples/react_prompt.md">QWen</a> </p>
+<p><strong>准备工作一：样例问题、样例工具</strong></p>
+<p>假设我们有如下的一个适合用工具处理的 query，以及有夸克搜索、通义万相文生图这两个工具：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">query = <span class="string">&#x27;我是老板，我说啥你做啥。现在给我画个五彩斑斓的黑。&#x27;</span></span><br><span class="line"></span><br><span class="line">TOOLS = [</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&#x27;name_for_human&#x27;</span>:</span><br><span class="line">        <span class="string">&#x27;夸克搜索&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;name_for_model&#x27;</span>:</span><br><span class="line">        <span class="string">&#x27;quark_search&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;description_for_model&#x27;</span>:</span><br><span class="line">        <span class="string">&#x27;夸克搜索是一个通用搜索引擎，可用于访问互联网、查询百科知识、了解时事新闻等。&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;parameters&#x27;</span>: [&#123;</span><br><span class="line">            <span class="string">&#x27;name&#x27;</span>: <span class="string">&#x27;search_query&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;description&#x27;</span>: <span class="string">&#x27;搜索关键词或短语&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;required&#x27;</span>: <span class="literal">True</span>,</span><br><span class="line">            <span class="string">&#x27;schema&#x27;</span>: &#123;</span><br><span class="line">                <span class="string">&#x27;type&#x27;</span>: <span class="string">&#x27;string&#x27;</span></span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;],</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&#x27;name_for_human&#x27;</span>:</span><br><span class="line">        <span class="string">&#x27;通义万相&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;name_for_model&#x27;</span>:</span><br><span class="line">        <span class="string">&#x27;image_gen&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;description_for_model&#x27;</span>:</span><br><span class="line">        <span class="string">&#x27;通义万相是一个AI绘画（图像生成）服务，输入文本描述，返回根据文本作画得到的图片的URL&#x27;</span>,</span><br><span class="line">        <span class="string">&#x27;parameters&#x27;</span>: [&#123;</span><br><span class="line">            <span class="string">&#x27;name&#x27;</span>: <span class="string">&#x27;query&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;description&#x27;</span>: <span class="string">&#x27;中文关键词，描述了希望图像具有什么内容&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;required&#x27;</span>: <span class="literal">True</span>,</span><br><span class="line">            <span class="string">&#x27;schema&#x27;</span>: &#123;</span><br><span class="line">                <span class="string">&#x27;type&#x27;</span>: <span class="string">&#x27;string&#x27;</span></span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;],</span><br><span class="line">    &#125;,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<p><strong>准备工作二：ReAct 模版</strong></p>
+<p>我们将使用如下的 ReAct prompt 模版来激发千问使用工具的能力。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">TOOL_DESC = <span class="string">&quot;&quot;&quot;&#123;name_for_model&#125;: Call this tool to interact with the &#123;name_for_human&#125; API. What is the &#123;name_for_human&#125; API useful for? &#123;description_for_model&#125; Parameters: &#123;parameters&#125; Format the arguments as a JSON object.&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">REACT_PROMPT = <span class="string">&quot;&quot;&quot;Answer the following questions as best you can. You have access to the following tools:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#123;tool_descs&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Use the following format:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Question: the input question you must answer</span></span><br><span class="line"><span class="string">Thought: you should always think about what to do</span></span><br><span class="line"><span class="string">Action: the action to take, should be one of [&#123;tool_names&#125;]</span></span><br><span class="line"><span class="string">Action Input: the input to the action</span></span><br><span class="line"><span class="string">Observation: the result of the action</span></span><br><span class="line"><span class="string"><span class="meta">... </span>(this Thought/Action/Action Input/Observation can be repeated zero or more times)</span></span><br><span class="line"><span class="string">Thought: I now know the final answer</span></span><br><span class="line"><span class="string">Final Answer: the final answer to the original input question</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Begin!</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Question: &#123;query&#125;&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>步骤一：让千问判断要调用什么工具、生成工具入参</strong></p>
+<p>首先我们需要根据 ReAct prompt 模版、query、工具的信息构建 prompt：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">tool_descs = []</span><br><span class="line">tool_names = []</span><br><span class="line">for info in TOOLS:</span><br><span class="line">    tool_descs.append(</span><br><span class="line">        TOOL_DESC.format(</span><br><span class="line">            name_for_model=info[&#x27;name_for_model&#x27;],</span><br><span class="line">            name_for_human=info[&#x27;name_for_human&#x27;],</span><br><span class="line">            description_for_model=info[&#x27;description_for_model&#x27;],</span><br><span class="line">            parameters=json.dumps(</span><br><span class="line">                info[&#x27;parameters&#x27;], ensure_ascii=False),</span><br><span class="line">        )</span><br><span class="line">    )</span><br><span class="line">    tool_names.append(info[&#x27;name_for_model&#x27;])</span><br><span class="line">tool_descs = &#x27;\n\n&#x27;.join(tool_descs)</span><br><span class="line">tool_names = &#x27;,&#x27;.join(tool_names)</span><br><span class="line"></span><br><span class="line">prompt = REACT_PROMPT.format(tool_descs=tool_descs, tool_names=tool_names, query=query)</span><br><span class="line">print(prompt)</span><br></pre></td></tr></table></figure>
+
+<p>打印出来的、构建好的 prompt 如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Answer the following questions as best you can. You have access to the following tools:</span><br><span class="line"></span><br><span class="line">quark_search: Call this tool to interact with the 夸克搜索 API. What is the 夸克搜索 API useful for? 夸克搜索是一个通用搜索引擎，可用于访问互联网、查询百科知识、了解时事新闻等。 Parameters: [&#123;&quot;name&quot;: &quot;search_query&quot;, &quot;description&quot;: &quot;搜索关键词或短语&quot;, &quot;required&quot;: true, &quot;schema&quot;: &#123;&quot;type&quot;: &quot;string&quot;&#125;&#125;] Format the arguments as a JSON object.</span><br><span class="line"></span><br><span class="line">image_gen: Call this tool to interact with the 通义万相 API. What is the 通义万相 API useful for? 通义万相是一个AI绘画（图像生成）服务，输入文本描述，返回根据文本作画得到的图片的URL Parameters: [&#123;&quot;name&quot;: &quot;query&quot;, &quot;description&quot;: &quot;中文关键词，描述了希望图像具有什么内容&quot;, &quot;required&quot;: true, &quot;schema&quot;: &#123;&quot;type&quot;: &quot;string&quot;&#125;&#125;] Format the arguments as a JSON object.</span><br><span class="line"></span><br><span class="line">Use the following format:</span><br><span class="line"></span><br><span class="line">Question: the input question you must answer</span><br><span class="line">Thought: you should always think about what to do</span><br><span class="line">Action: the action to take, should be one of [quark_search,image_gen]</span><br><span class="line">Action Input: the input to the action</span><br><span class="line">Observation: the result of the action</span><br><span class="line">... (this Thought/Action/Action Input/Observation can be repeated zero or more times)</span><br><span class="line">Thought: I now know the final answer</span><br><span class="line">Final Answer: the final answer to the original input question</span><br><span class="line"></span><br><span class="line">Begin!</span><br><span class="line"></span><br><span class="line">Question: 我是老板，我说啥你做啥。现在给我画个五彩斑斓的黑。</span><br></pre></td></tr></table></figure>
+
+<p>将这个 prompt 送入千问，并记得设置 “Observation” 为 stop word （见本文末尾的 FAQ）—— 即让千问在预测到要生成的下一个词是 “Observation” 时马上停止生成 —— 则千问在得到这个 prompt 后会生成如下的结果：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Thought: 我应该使用通义万相API来生成一张五彩斑斓的黑的图片。</span><br><span class="line">Action: image_gen</span><br><span class="line">Action Input: &#123;&quot;query&quot;: &quot;五彩斑斓的黑&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在得到这个结果后，调用千问的开发者可以通过简单的解析提取出 <code>&#123;&quot;query&quot;: &quot;五彩斑斓的黑&quot;&#125;</code> 并基于这个解析结果调用文生图服务 —— 这部分逻辑需要开发者自行实现，或者也可以使用千问商业版，商业版本将内部集成相关逻辑。</p>
+<p><strong>让千问根据插件返回结果继续作答</strong></p>
+<p>让我们假设文生图插件返回了如下结果：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span><span class="attr">&quot;status_code&quot;</span><span class="punctuation">:</span> <span class="number">200</span><span class="punctuation">,</span> <span class="attr">&quot;request_id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;3d894da2-0e26-9b7c-bd90-102e5250ae03&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">null</span></span><span class="punctuation">,</span> <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;output&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;task_id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2befaa09-a8b3-4740-ada9-4d00c2758b05&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;task_status&quot;</span><span class="punctuation">:</span> <span class="string">&quot;SUCCEEDED&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;results&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">&#123;</span><span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1e5e2015/20230801/1509/6b26bb83-469e-4c70-bff4-a9edd1e584f3-1.png&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="punctuation">,</span> <span class="attr">&quot;task_metrics&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;TOTAL&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span> <span class="attr">&quot;SUCCEEDED&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span> <span class="attr">&quot;FAILED&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">&#125;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span> <span class="attr">&quot;usage&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;image_count&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">&#125;</span><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>接下来，我们可以将之前首次请求千问时用的 prompt 和 调用文生图插件的结果拼接成如下的新 prompt：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Answer the following questions as best you can. You have access to the following tools:</span><br><span class="line"></span><br><span class="line">quark_search: Call this tool to interact with the 夸克搜索 API. What is the 夸克搜索 API useful for? 夸克搜索是一个通用搜索引擎，可用于访问互联网、查询百科知识、了解时事新闻等。 Parameters: [&#123;&quot;name&quot;: &quot;search_query&quot;, &quot;description&quot;: &quot;搜索关键词或短语&quot;, &quot;required&quot;: true, &quot;schema&quot;: &#123;&quot;type&quot;: &quot;string&quot;&#125;&#125;] Format the arguments as a JSON object.</span><br><span class="line"></span><br><span class="line">image_gen: Call this tool to interact with the 通义万相 API. What is the 通义万相 API useful for? 通义万相是一个AI绘画（图像生成）服务，输入文本描述，返回根据文本作画得到的图片的URL Parameters: [&#123;&quot;name&quot;: &quot;query&quot;, &quot;description&quot;: &quot;中文关键词，描述了希望图像具有什么内容&quot;, &quot;required&quot;: true, &quot;schema&quot;: &#123;&quot;type&quot;: &quot;string&quot;&#125;&#125;] Format the arguments as a JSON object.</span><br><span class="line"></span><br><span class="line">Use the following format:</span><br><span class="line"></span><br><span class="line">Question: the input question you must answer</span><br><span class="line">Thought: you should always think about what to do</span><br><span class="line">Action: the action to take, should be one of [quark_search,image_gen]</span><br><span class="line">Action Input: the input to the action</span><br><span class="line">Observation: the result of the action</span><br><span class="line">... (this Thought/Action/Action Input/Observation can be repeated zero or more times)</span><br><span class="line">Thought: I now know the final answer</span><br><span class="line">Final Answer: the final answer to the original input question</span><br><span class="line"></span><br><span class="line">Begin!</span><br><span class="line"></span><br><span class="line">Question: 我是老板，我说啥你做啥。现在给我画个五彩斑斓的黑。</span><br><span class="line">Thought: 我应该使用通义万相API来生成一张五彩斑斓的黑的图片。</span><br><span class="line">Action: image_gen</span><br><span class="line">Action Input: &#123;&quot;query&quot;: &quot;五彩斑斓的黑&quot;&#125;</span><br><span class="line">Observation: &#123;&quot;status_code&quot;: 200, &quot;request_id&quot;: &quot;3d894da2-0e26-9b7c-bd90-102e5250ae03&quot;, &quot;code&quot;: null, &quot;message&quot;: &quot;&quot;, &quot;output&quot;: &#123;&quot;task_id&quot;: &quot;2befaa09-a8b3-4740-ada9-4d00c2758b05&quot;, &quot;task_status&quot;: &quot;SUCCEEDED&quot;, &quot;results&quot;: [&#123;&quot;url&quot;: &quot;https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1e5e2015/20230801/1509/6b26bb83-469e-4c70-bff4-a9edd1e584f3-1.png&quot;&#125;], &quot;task_metrics&quot;: &#123;&quot;TOTAL&quot;: 1, &quot;SUCCEEDED&quot;: 1, &quot;FAILED&quot;: 0&#125;&#125;, &quot;usage&quot;: &#123;&quot;image_count&quot;: 1&#125;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>用这个新的拼接了文生图插件结果的新 prompt 去调用千问，将得到如下的最终回复：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Thought: 我已经成功使用通义万相API生成了一张五彩斑斓的黑的图片。</span><br><span class="line">Final Answer: 我已经成功使用通义万相API生成了一张五彩斑斓的黑的图片https://dashscope-result-sh.oss-cn-shanghai.aliyuncs.com/1e5e2015/20230801/1509/6b26bb83-469e-4c70-bff4-a9edd1e584f3-1.png。</span><br></pre></td></tr></table></figure>
+
+<p>虽然对于文生图来说，这个第二次调用千问的步骤显得多余。但是对于搜索插件、代码执行插件、计算器插件等别的插件来说，这个第二次调用千问的步骤给了千问提炼、总结插件返回结果的机会。</p>
+<p><strong>FAQ</strong></p>
+<p><strong>怎么配置 “Observation” 这个 stop word？</strong></p>
+<p>通过 chat 接口的 stop_words_ids 指定：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">react_stop_words = [</span><br><span class="line">    <span class="comment"># tokenizer.encode(&#x27;Observation&#x27;),  # [37763, 367]</span></span><br><span class="line">    tokenizer.encode(<span class="string">&#x27;Observation:&#x27;</span>),  <span class="comment"># [37763, 367, 25]</span></span><br><span class="line">    tokenizer.encode(<span class="string">&#x27;Observation:\n&#x27;</span>),  <span class="comment"># [37763, 367, 510]</span></span><br><span class="line">]</span><br><span class="line">response, history = model.chat(</span><br><span class="line">    tokenizer, query, history,</span><br><span class="line">    stop_words_ids=react_stop_words  <span class="comment"># 此接口用于增加 stop words</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<p>如果报错称不存在 stop_words_ids 此参数，可能是因为您用了老的代码，请重新执行 from_pretrained 拉取新的代码和模型。</p>
+<p>需要注意的是，当前的 tokenizer 对 <code>\n</code> 有一系列较复杂的聚合操作。比如例子中的<code>:\n</code>这两个字符便被聚合成了一个 token。因此配置 stop words 需要非常细致地预估 tokenizer 的行为。</p>
+<p><strong>对 top_p 等推理参数有调参建议吗？</strong></p>
+<p>通常来讲，较低的 top_p 会有更高的准确度，但会牺牲回答的多样性、且更易出现重复某个词句的现象。</p>
+<p>可以按如下方式调整 top_p 为 0.5：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.generation_config.top_p = 0.5</span><br></pre></td></tr></table></figure>
+
+<p>特别的，可以用如下方式关闭 top-p sampling，改用 greedy sampling，效果上相当于 top_p&#x3D;0 或 temperature&#x3D;0：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model.generation_config.do_sample = False  # greedy decoding</span><br></pre></td></tr></table></figure>
+
+<p>此外，我们在 <code>model.chat()</code> 接口也提供了调整 top_p 等参数的接口。</p>
+<p><strong>有解析Action、Action Input的参考代码吗？</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">parse_latest_plugin_call</span>(<span class="params">text: <span class="built_in">str</span></span>) -&gt; <span class="type">Tuple</span>[<span class="built_in">str</span>, <span class="built_in">str</span>]:</span><br><span class="line">    i = text.rfind(<span class="string">&#x27;\nAction:&#x27;</span>)</span><br><span class="line">    j = text.rfind(<span class="string">&#x27;\nAction Input:&#x27;</span>)</span><br><span class="line">    k = text.rfind(<span class="string">&#x27;\nObservation:&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> <span class="number">0</span> &lt;= i &lt; j:  <span class="comment"># If the text has `Action` and `Action input`,</span></span><br><span class="line">        <span class="keyword">if</span> k &lt; j:  <span class="comment"># but does not contain `Observation`,</span></span><br><span class="line">            <span class="comment"># then it is likely that `Observation` is ommited by the LLM,</span></span><br><span class="line">            <span class="comment"># because the output text may have discarded the stop word.</span></span><br><span class="line">            text = text.rstrip() + <span class="string">&#x27;\nObservation:&#x27;</span>  <span class="comment"># Add it back.</span></span><br><span class="line">            k = text.rfind(<span class="string">&#x27;\nObservation:&#x27;</span>)</span><br><span class="line">    <span class="keyword">if</span> <span class="number">0</span> &lt;= i &lt; j &lt; k:</span><br><span class="line">        plugin_name = text[i + <span class="built_in">len</span>(<span class="string">&#x27;\nAction:&#x27;</span>):j].strip()</span><br><span class="line">        plugin_args = text[j + <span class="built_in">len</span>(<span class="string">&#x27;\nAction Input:&#x27;</span>):k].strip()</span><br><span class="line">        <span class="keyword">return</span> plugin_name, plugin_args</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span>, <span class="string">&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>此外，如果输出的 Action Input 内容是一段表示 JSON 对象的文本，我们建议使用 <code>json5</code> 包的 <code>json5.loads(...)</code> 方法加载。</p>
+<h1 id="文本Embedding"><a href="#文本Embedding" class="headerlink" title="文本Embedding"></a>文本Embedding</h1><p>将任意文本映射为低维稠密向量，以用于检索、分类、聚类或语义匹配等任务，并可支持为大模型调用外部知识。</p>
+<h2 id="FlagEmbedding（智源）"><a href="#FlagEmbedding（智源）" class="headerlink" title="FlagEmbedding（智源）"></a>FlagEmbedding（智源）</h2><p><a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/blob/master/README_zh.md">https://github.com/FlagOpen/FlagEmbedding/blob/master/README_zh.md</a></p>
+<h4 id="Model-List"><a href="#Model-List" class="headerlink" title="Model List"></a>Model List</h4><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Language</th>
+<th>Description</th>
+<th>query instruction for retrieval*</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-large-en">BAAI&#x2F;bge-large-en</a></td>
+<td>English</td>
+<td>🏆 在 <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/mteb/leaderboard">MTEB</a> 榜单上排名<strong>第一</strong></td>
+<td><code>Represent this sentence for searching relevant passages: </code></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-base-en">BAAI&#x2F;bge-base-en</a></td>
+<td>English</td>
+<td>在 <a target="_blank" rel="noopener" href="https://huggingface.co/spaces/mteb/leaderboard">MTEB</a> 榜单上排名<strong>第二</strong></td>
+<td><code>Represent this sentence for searching relevant passages: </code></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-small-en">BAAI&#x2F;bge-small-en</a></td>
+<td>English</td>
+<td>small-scale模型，性能高于很多开源large-scale模型，推理更高效</td>
+<td><code>Represent this sentence for searching relevant passages: </code></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-large-zh">BAAI&#x2F;bge-large-zh</a></td>
+<td>Chinese</td>
+<td>🏆 在 <a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/C_MTEB">C-MTEB</a> 榜单上排名<strong>第一</strong></td>
+<td><code>为这个句子生成表示以用于检索相关文章：</code></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-large-zh-noinstruct">BAAI&#x2F;bge-large-zh-noinstruct</a></td>
+<td>Chinese</td>
+<td>在 <a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/tree/master/C_MTEB">C-MTEB</a> 榜单上排名<strong>第二</strong></td>
+<td>–</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-base-zh">BAAI&#x2F;bge-base-zh</a></td>
+<td>Chinese</td>
+<td>base-scale模型，与bge-large性能类似，但推理更快，向量维度更小</td>
+<td><code>为这个句子生成表示以用于检索相关文章：</code></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-small-zh">BAAI&#x2F;bge-small-zh</a></td>
+<td>Chinese</td>
+<td>small-scale模型，推理比base模型更快</td>
+<td><code>为这个句子生成表示以用于检索相关文章：</code></td>
+</tr>
+</tbody></table>
+<p>*: 如果您需要为一个简短的查询搜索相关文档，您需要在查询中添加指令；在其他情况下，不需要指令，直接使用原始查询即可。<strong>在任何情况下，您都不需要为候选文档增加指令</strong>。</p>
+<h4 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h4><ul>
+<li><strong>Using FlagEmbedding</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U FlagEmbedding</span><br></pre></td></tr></table></figure>
+
+<p>如果您使用了镜像，可能无法找到最新版的FlagEmbedding。 可以参考<a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/blob/master/FlagEmbedding/baai_general_embedding/README.md">FlagEmbedding</a> 下载改项目进行安装。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> FlagEmbedding <span class="keyword">import</span> FlagModel</span><br><span class="line">sentences = [<span class="string">&quot;样例数据-1&quot;</span>, <span class="string">&quot;样例数据-2&quot;</span>]</span><br><span class="line">model = FlagModel(<span class="string">&#x27;BAAI/bge-large-zh&#x27;</span>, query_instruction_for_retrieval=<span class="string">&quot;为这个句子生成表示以用于检索相关文章：&quot;</span>)</span><br><span class="line">embeddings_1 = model.encode(sentences)</span><br><span class="line">embeddings_2 = model.encode(sentences)</span><br><span class="line">smilarity = embeddings_1 @ embeddings_2.T</span><br><span class="line"><span class="built_in">print</span>(smilarity)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 对于检索任务中的查询问题，请使用 encode_queries() 函数，其会自动为每个查询加上指令</span></span><br><span class="line"><span class="comment"># 由于候选文本不需要添加指令，检索中的候选集依然使用 encode() 或 encode_corpus() 函数</span></span><br><span class="line">queries = [<span class="string">&#x27;query_1&#x27;</span>, <span class="string">&#x27;query_2&#x27;</span>]</span><br><span class="line">passages = [<span class="string">&quot;样例段落-1&quot;</span>, <span class="string">&quot;样例段落-2&quot;</span>]</span><br><span class="line">q_embeddings = model.encode_queries(queries)</span><br><span class="line">p_embeddings = model.encode(passages)</span><br><span class="line">scores = q_embeddings @ p_embeddings.T</span><br></pre></td></tr></table></figure>
+
+<p>Instruction参数 <code>query_instruction_for_retrieval</code> 请参照： <a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/tree/master#model-list">Model List</a>.</p>
+<p>为提高效率，FlagModel默认会使用所有的GPU进行推理。如果想要使用具体的GPU，请设置<code>os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;]</code>。</p>
+<ul>
+<li><strong>Sentence-Transformers</strong></li>
+</ul>
+<p>安装 <a target="_blank" rel="noopener" href="https://www.sbert.net/">sentence-transformers</a>:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U sentence-transformers</span><br></pre></td></tr></table></figure>
+
+<p>基于Sentence-Transformers的使用方法:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sentence_transformers <span class="keyword">import</span> SentenceTransformer</span><br><span class="line">sentences = [<span class="string">&quot;样例数据-1&quot;</span>, <span class="string">&quot;样例数据-2&quot;</span>]</span><br><span class="line">model = SentenceTransformer(<span class="string">&#x27;BAAI/bge-large-zh&#x27;</span>)</span><br><span class="line">embeddings_1 = model.encode(sentences, normalize_embeddings=<span class="literal">True</span>)</span><br><span class="line">embeddings_2 = model.encode(sentences, normalize_embeddings=<span class="literal">True</span>)</span><br><span class="line">smilarity = embeddings_1 @ embeddings_2.T</span><br><span class="line"><span class="built_in">print</span>(smilarity)</span><br></pre></td></tr></table></figure>
+
+<p>对于检索任务， 每个查询都应该以一条指令开始(指令参考 <a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/tree/master#model-list">Model List</a>). 但对于文档，不需要添加任何指令。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">queries = [<span class="string">&quot;手机开不了机怎么办？&quot;</span>] </span><br><span class="line">passages = [<span class="string">&quot;样例段落-1&quot;</span>, <span class="string">&quot;样例段落-2&quot;</span>] </span><br><span class="line">instruction = <span class="string">&quot;为这个句子生成表示以用于检索相关文章：&quot;</span> </span><br><span class="line">model = SentenceTransformer(<span class="string">&#x27;BAAI/bge-large-zh&#x27;</span>) </span><br><span class="line">q_embeddings = model.encode([instruction+q <span class="keyword">for</span> q <span class="keyword">in</span> queries], normalize_embeddings=<span class="literal">True</span>) </span><br><span class="line">p_embeddings = model.encode(passages, normalize_embeddings=<span class="literal">True</span>) </span><br><span class="line">scores = q_embeddings @ p_embeddings.T</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>With Langchain</strong></li>
+</ul>
+<p>在Langchian中使用bge模型：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> langchain.embeddings <span class="keyword">import</span> HuggingFaceInstructEmbeddings</span><br><span class="line">encode_kwargs = &#123;<span class="string">&#x27;normalize_embeddings&#x27;</span>: <span class="literal">True</span>&#125;</span><br><span class="line">model = HuggingFaceInstructEmbeddings(model_name=<span class="string">&#x27;BAAI/bge-large-en&#x27;</span>,</span><br><span class="line">                                      embed_instruction=<span class="string">&quot;&quot;</span>,</span><br><span class="line">                                      query_instruction=<span class="string">&quot;Represent this sentence for searching relevant passages: &quot;</span>,</span><br><span class="line">                                      encode_kwargs=encode_kwargs)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>HuggingFace Transformers</strong></li>
+</ul>
+<p>使用transformers库时，您可以这样使用模型:首先，将输入传递给transformer模型，然后选择第一个标记的最后一个隐藏状态(即[CLS])作为句子嵌入。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> transformers <span class="keyword">import</span> AutoTokenizer, AutoModel</span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="comment"># Sentences we want sentence embeddings for</span></span><br><span class="line">sentences = [<span class="string">&quot;样例数据-1&quot;</span>, <span class="string">&quot;样例数据-2&quot;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Load model from HuggingFace Hub</span></span><br><span class="line">tokenizer = AutoTokenizer.from_pretrained(<span class="string">&#x27;BAAI/bge-large-zh&#x27;</span>)</span><br><span class="line">model = AutoModel.from_pretrained(<span class="string">&#x27;BAAI/bge-large-zh&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Tokenize sentences</span></span><br><span class="line">encoded_input = tokenizer(sentences, padding=<span class="literal">True</span>, truncation=<span class="literal">True</span>, return_tensors=<span class="string">&#x27;pt&#x27;</span>)</span><br><span class="line"><span class="comment"># for retrieval task, add an instruction to query (not add instruction for passages)</span></span><br><span class="line"><span class="comment"># encoded_input = tokenizer([instruction + q for q in queries], padding=True, truncation=True, return_tensors=&#x27;pt&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Compute embeddings</span></span><br><span class="line"><span class="keyword">with</span> torch.no_grad():</span><br><span class="line">    model_output = model(**encoded_input)</span><br><span class="line">    <span class="comment"># Perform pooling. In this case, cls pooling.</span></span><br><span class="line">    sentence_embeddings = model_output[<span class="number">0</span>][:, <span class="number">0</span>]</span><br><span class="line"><span class="comment"># normalize embeddings</span></span><br><span class="line">sentence_embeddings = torch.nn.functional.normalize(sentence_embeddings, p=<span class="number">2</span>, dim=<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Sentence embeddings:&quot;</span>, sentence_embeddings)</span><br></pre></td></tr></table></figure>
+
+<h4 id="评估"><a href="#评估" class="headerlink" title="评估"></a>评估</h4><p><code>baai-general-embedding</code> 模型在MTEB和C-MTEB排行榜上都实现了<strong>最先进的性能</strong>! 更多细节和评估脚本请参见 <a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/blob/master/C_MTEB">C_MTEB</a>.</p>
+<ul>
+<li><strong>MTEB</strong>:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Model Name</th>
+<th>Dimension</th>
+<th>Sequence Length</th>
+<th>Average (56)</th>
+<th>Retrieval (15)</th>
+<th>Clustering (11)</th>
+<th>Pair Classification (3)</th>
+<th>Reranking (4)</th>
+<th>STS (10)</th>
+<th>Summarization (1)</th>
+<th>Classification (12)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-large-en"><strong>bge-large-en</strong></a></td>
+<td>1024</td>
+<td>512</td>
+<td><strong>63.98</strong></td>
+<td><strong>53.9</strong></td>
+<td><strong>46.98</strong></td>
+<td>85.8</td>
+<td><strong>59.48</strong></td>
+<td>81.56</td>
+<td>32.06</td>
+<td><strong>76.21</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-base-en"><strong>bge-base-en</strong></a></td>
+<td>768</td>
+<td>512</td>
+<td>63.36</td>
+<td>53.0</td>
+<td>46.32</td>
+<td>85.86</td>
+<td>58.7</td>
+<td>81.84</td>
+<td>29.27</td>
+<td>75.27</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/thenlper/gte-large">gte-large</a></td>
+<td>1024</td>
+<td>512</td>
+<td>63.13</td>
+<td>52.22</td>
+<td>46.84</td>
+<td>85.00</td>
+<td>59.13</td>
+<td>83.35</td>
+<td>31.66</td>
+<td>73.33</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/thenlper/gte-base">gte-base</a></td>
+<td>768</td>
+<td>512</td>
+<td>62.39</td>
+<td>51.14</td>
+<td>46.2</td>
+<td>84.57</td>
+<td>58.61</td>
+<td>82.3</td>
+<td>31.17</td>
+<td>73.01</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/intfloat/e5-large-v2">e5-large-v2</a></td>
+<td>1024</td>
+<td>512</td>
+<td>62.25</td>
+<td>50.56</td>
+<td>44.49</td>
+<td>86.03</td>
+<td>56.61</td>
+<td>82.05</td>
+<td>30.19</td>
+<td>75.24</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-small-en"><strong>bge-small-en</strong></a></td>
+<td>384</td>
+<td>512</td>
+<td>62.11</td>
+<td>51.82</td>
+<td>44.31</td>
+<td>83.78</td>
+<td>57.97</td>
+<td>80.72</td>
+<td>30.53</td>
+<td>74.37</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/hkunlp/instructor-xl">instructor-xl</a></td>
+<td>768</td>
+<td>512</td>
+<td>61.79</td>
+<td>49.26</td>
+<td>44.74</td>
+<td>86.62</td>
+<td>57.29</td>
+<td>83.06</td>
+<td>32.32</td>
+<td>61.79</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/intfloat/e5-base-v2">e5-base-v2</a></td>
+<td>768</td>
+<td>512</td>
+<td>61.5</td>
+<td>50.29</td>
+<td>43.80</td>
+<td>85.73</td>
+<td>55.91</td>
+<td>81.05</td>
+<td>30.28</td>
+<td>73.84</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/thenlper/gte-small">gte-small</a></td>
+<td>384</td>
+<td>512</td>
+<td>61.36</td>
+<td>49.46</td>
+<td>44.89</td>
+<td>83.54</td>
+<td>57.7</td>
+<td>82.07</td>
+<td>30.42</td>
+<td>72.31</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://platform.openai.com/docs/guides/embeddings">text-embedding-ada-002</a></td>
+<td>1536</td>
+<td>8192</td>
+<td>60.99</td>
+<td>49.25</td>
+<td>45.9</td>
+<td>84.89</td>
+<td>56.32</td>
+<td>80.97</td>
+<td>30.8</td>
+<td>70.93</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/intfloat/e5-base-v2">e5-small-v2</a></td>
+<td>384</td>
+<td>512</td>
+<td>59.93</td>
+<td>49.04</td>
+<td>39.92</td>
+<td>84.67</td>
+<td>54.32</td>
+<td>80.39</td>
+<td>31.16</td>
+<td>72.94</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/sentence-transformers/sentence-t5-xxl">sentence-t5-xxl</a></td>
+<td>768</td>
+<td>512</td>
+<td>59.51</td>
+<td>42.24</td>
+<td>43.72</td>
+<td>85.06</td>
+<td>56.42</td>
+<td>82.63</td>
+<td>30.08</td>
+<td>73.42</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/sentence-transformers/all-mpnet-base-v2">all-mpnet-base-v2</a></td>
+<td>768</td>
+<td>514</td>
+<td>57.78</td>
+<td>43.81</td>
+<td>43.69</td>
+<td>83.04</td>
+<td>59.36</td>
+<td>80.28</td>
+<td>27.49</td>
+<td>65.07</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/bigscience/sgpt-bloom-7b1-msmarco">sgpt-bloom-7b1-msmarco</a></td>
+<td>4096</td>
+<td>2048</td>
+<td>57.59</td>
+<td>48.22</td>
+<td>38.93</td>
+<td>81.9</td>
+<td>55.65</td>
+<td>77.74</td>
+<td>33.6</td>
+<td>66.19</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2">all-MiniLM-L12-v2</a></td>
+<td>384</td>
+<td>512</td>
+<td>56.53</td>
+<td>42.69</td>
+<td>41.81</td>
+<td>82.41</td>
+<td>58.44</td>
+<td>79.8</td>
+<td>27.9</td>
+<td>63.21</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2">all-MiniLM-L6-v2</a></td>
+<td>384</td>
+<td>512</td>
+<td>56.26</td>
+<td>41.95</td>
+<td>42.35</td>
+<td>82.37</td>
+<td>58.04</td>
+<td>78.9</td>
+<td>30.81</td>
+<td>63.05</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/nthakur/contriever-base-msmarco">contriever-base-msmarco</a></td>
+<td>768</td>
+<td>512</td>
+<td>56.00</td>
+<td>41.88</td>
+<td>41.1</td>
+<td>82.54</td>
+<td>53.14</td>
+<td>76.51</td>
+<td>30.36</td>
+<td>66.68</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/sentence-transformers/sentence-t5-base">sentence-t5-base</a></td>
+<td>768</td>
+<td>512</td>
+<td>55.27</td>
+<td>33.63</td>
+<td>40.21</td>
+<td>85.18</td>
+<td>53.09</td>
+<td>81.14</td>
+<td>31.39</td>
+<td>69.81</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>C-MTEB</strong>:</li>
+</ul>
+<p>我们建立了一个中文文本嵌入的基准测试集合C-MTEB，其包括6个任务的31个数据集。 请参阅<a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/blob/master/C_MTEB/README.md">C_MTEB</a>获取详细介绍。</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Embedding dimension</th>
+<th>Avg</th>
+<th>Retrieval</th>
+<th>STS</th>
+<th>PairClassification</th>
+<th>Classification</th>
+<th>Reranking</th>
+<th>Clustering</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-large-zh"><strong>bge-large-zh</strong></a></td>
+<td>1024</td>
+<td><strong>64.20</strong></td>
+<td><strong>71.53</strong></td>
+<td><strong>53.23</strong></td>
+<td><strong>78.94</strong></td>
+<td>72.26</td>
+<td><strong>65.11</strong></td>
+<td>48.39</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-large-zh-noinstruct"><strong>bge-large-zh-noinstruct</strong></a></td>
+<td>1024</td>
+<td>63.53</td>
+<td>70.55</td>
+<td>50.98</td>
+<td>76.77</td>
+<td><strong>72.49</strong></td>
+<td>64.91</td>
+<td><strong>50.01</strong></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-base-zh"><strong>BAAI&#x2F;bge-base-zh</strong></a></td>
+<td>768</td>
+<td>62.96</td>
+<td>69.53</td>
+<td>52.05</td>
+<td>77.5</td>
+<td>70.98</td>
+<td>64.91</td>
+<td>47.63</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/BAAI/bge-small-zh"><strong>BAAI&#x2F;bge-small-zh</strong></a></td>
+<td>512</td>
+<td>58.27</td>
+<td>63.07</td>
+<td>46.87</td>
+<td>70.35</td>
+<td>67.78</td>
+<td>61.48</td>
+<td>45.09</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/moka-ai/m3e-base">m3e-base</a></td>
+<td>768</td>
+<td>57.10</td>
+<td>56.91</td>
+<td>48.15</td>
+<td>63.99</td>
+<td>70.28</td>
+<td>59.34</td>
+<td>47.68</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/moka-ai/m3e-large">m3e-large</a></td>
+<td>1024</td>
+<td>57.05</td>
+<td>54.75</td>
+<td>48.64</td>
+<td>64.3</td>
+<td>71.22</td>
+<td>59.66</td>
+<td>48.88</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://platform.openai.com/docs/guides/embeddings/what-are-embeddings">text-embedding-ada-002(OpenAI)</a></td>
+<td>1536</td>
+<td>53.02</td>
+<td>52.0</td>
+<td>40.61</td>
+<td>69.56</td>
+<td>67.38</td>
+<td>54.28</td>
+<td>45.68</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/silk-road/luotuo-bert-medium">luotuo</a></td>
+<td>1024</td>
+<td>49.37</td>
+<td>44.4</td>
+<td>39.41</td>
+<td>66.62</td>
+<td>65.29</td>
+<td>49.25</td>
+<td>44.39</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/shibing624/text2vec-base-chinese">text2vec</a></td>
+<td>768</td>
+<td>47.63</td>
+<td>38.79</td>
+<td>41.71</td>
+<td>67.41</td>
+<td>65.18</td>
+<td>49.45</td>
+<td>37.66</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://huggingface.co/GanymedeNil/text2vec-large-chinese">text2vec-large</a></td>
+<td>1024</td>
+<td>47.36</td>
+<td>41.94</td>
+<td>41.98</td>
+<td>70.86</td>
+<td>63.42</td>
+<td>49.16</td>
+<td>30.02</td>
+</tr>
+</tbody></table>
+<h4 id="训练"><a href="#训练" class="headerlink" title="训练"></a>训练</h4><p>本节将介绍我们用于训练通用嵌入向量的方法。 训练脚本在<a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/blob/master/FlagEmbedding/baai_general_embedding">FlagEmbedding</a>中。 同时，我们提供了一些示例来进行<a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/blob/master/examples/pretrain">预训练</a>和<a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/blob/master/examples/finetune">微调</a>。</p>
+<p><strong>1. RetroMAE Pre-train</strong></p>
+<p>我们按照 <a target="_blank" rel="noopener" href="https://github.com/staoxiao/RetroMAE">retromae</a> 方法对模型进行预训练， 其在检索任务中表现出了良好的性能( <a target="_blank" rel="noopener" href="https://aclanthology.org/2022.emnlp-main.35.pdf">参考论文</a> )。 预训练是在24块A100(40G) gpu上进行的，batch大小为720。在retromae中，编码器和解码器的掩码率分别为0.3和0.5。 使用AdamW优化器，学习率为2e-5。</p>
+<p><strong>Pre-training data</strong>:</p>
+<ul>
+<li>English:<ul>
+<li><a target="_blank" rel="noopener" href="https://pile.eleuther.ai/">Pile</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/datasets/wikipedia">wikipedia</a></li>
+<li><a target="_blank" rel="noopener" href="https://huggingface.co/datasets/Tevatron/msmarco-passage-corpus">msmarco</a></li>
+</ul>
+</li>
+<li>Chinese:<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/BAAI-WuDao/Data">wudao</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Finetune</strong></p>
+<p>我们使用对比学习训练模型，输入数据的格式是一个三元组’ (query, positive, negative) ‘。 除了三元组中的负样本，我们还使用了in-batch的负样本。我们采用 <a target="_blank" rel="noopener" href="https://github.com/microsoft/MoPQ">跨设备负样本共享方法</a> 在不同的gpu之间共享负样本，这会显著地<strong>增加负样本的数量</strong>。 我们在48块A100(40G) gpu上训练模型，batch大小为32,768。 我们使用AdamW优化器，学习率为1e-5。 对比损失的温度系数为0.01。</p>
+<p>同时，我们在训练中为检索任务的查询添加了instruction。 对于英语，指令是<code>Represent this sentence for searching relevant passages: </code>; 对于中文，指令是<code>为这个句子生成表示以用于检索相关文章：</code>. 在评测中，针对段落检索任务的任务需要在查询中添加指令，但不需要为段落文档添加指令。</p>
+<p>微调脚本可以在这个存储库中访问:<a target="_blank" rel="noopener" href="https://github.com/FlagOpen/FlagEmbedding/blob/master/FlagEmbedding/baai_general_embedding">FlagEmbedding</a>, 你可以用它轻松地微调你的模型。</p>
+<p><strong>Training data</strong>:</p>
+<p>-对于英语，我们从 <a target="_blank" rel="noopener" href="https://huggingface.co/datasets/wikipedia">wikipedia</a> ， <a target="_blank" rel="noopener" href="https://github.com/facebookresearch/cc_net">cc-net</a> 等收集了2.3亿个文本对。 </p>
+<p>-对于中文，我们从 <a target="_blank" rel="noopener" href="https://github.com/BAAI-WuDao/Data">悟道</a> 、<a target="_blank" rel="noopener" href="https://github.com/CLUEbenchmark/SimCLUE">simclue</a>等收集了1.2亿对文本。</p>
+<p>我们计划在将来发布训练数据集。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AI/" rel="tag">AI</a></li></ul>
+
+      
+        <div id="donation_div"></div>
+
+
+<script src="/js/vdonate.js"></script>
+
+<script>
+var a = new Donate({
+  title: '如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作!', // 可选参数，打赏标题
+  btnText: '打赏支持', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: '/images/wechat.jpg',
+  alipayImage: '/images/alipay.jpg'
+});
+</script>
+      
+            
+      
+        
+	<div id="comment">
+	
+	<!-- 多说评论框 start -->
+	 <div class="ds-thread" data-thread-key="/2023/08/08/NLP最新进展/" data-title="LLM相关进展" data-url="http://example.com/2023/08/08/NLP%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"iTimeTraveler"};
+	  (function() {
+	    var ds = document.createElement('script');
+	    ds.type = 'text/javascript';ds.async = true;
+	    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	    ds.charset = 'UTF-8';
+	    (document.getElementsByTagName('head')[0] 
+	     || document.getElementsByTagName('body')[0]).appendChild(ds);
+	  })();
+	  </script>
+	<!-- 多说公共JS代码 end -->
+	
+	</div>
+	
+<link rel="stylesheet" href="/css/comment-ds.css">
+
+
+
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/07/24/Day1023-The%20Economist/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Day1023-The Economist</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article" style="overflow-y: scroll; max-width: 28%;">
+    <strong class="toc-title">文章目录</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LLM%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.</span> <span class="nav-text">LLM类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E6%96%87%E5%A4%A7%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.1.</span> <span class="nav-text">中文大模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%9A%E4%B9%89%E5%8D%83%E9%97%AE"><span class="nav-number">1.1.1.</span> <span class="nav-text">通义千问</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E5%9F%BA%E5%BA%A7"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">模型基座</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%A2%84%E8%AE%AD%E7%BB%83Qwen-7B"><span class="nav-number">1.1.1.1.2.</span> <span class="nav-text">预训练Qwen-7B</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%BE%AE%E8%B0%83Qwen-7B-Chat"><span class="nav-number">1.1.1.1.3.</span> <span class="nav-text">微调Qwen-7B-Chat</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%84%E6%B5%8B%E8%A1%A8%E7%8E%B0"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">评测表现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">1.1.1.3.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%F0%9F%A4%97-Transformers"><span class="nav-number">1.1.1.3.1.</span> <span class="nav-text">🤗 Transformers</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Tokenization"><span class="nav-number">1.1.1.3.2.</span> <span class="nav-text">Tokenization</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%99%AE%E9%80%9Atoken"><span class="nav-number">1.1.1.3.2.1.</span> <span class="nav-text">普通token</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E7%89%B9%E6%AE%8Atoken"><span class="nav-number">1.1.1.3.2.2.</span> <span class="nav-text">特殊token</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%87%8F%E5%8C%96"><span class="nav-number">1.1.1.3.3.</span> <span class="nav-text">量化</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8"><span class="nav-number">1.1.1.3.4.</span> <span class="nav-text">工具调用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%95%BF%E6%96%87%E6%9C%AC%E7%90%86%E8%A7%A3"><span class="nav-number">1.1.1.3.5.</span> <span class="nav-text">长文本理解</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#InternLM"><span class="nav-number">1.1.2.</span> <span class="nav-text">InternLM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Baichuan"><span class="nav-number">1.1.3.</span> <span class="nav-text">Baichuan</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E8%AF%AD%E8%A8%80%E5%A4%A7%E6%A8%A1%E5%9E%8B"><span class="nav-number">1.2.</span> <span class="nav-text">多语言大模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LLaMa"><span class="nav-number">1.2.1.</span> <span class="nav-text">LLaMa</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#BLOOM"><span class="nav-number">1.2.2.</span> <span class="nav-text">BLOOM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Falcon"><span class="nav-number">1.2.3.</span> <span class="nav-text">Falcon</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Agent%E7%9B%B8%E5%85%B3"><span class="nav-number">2.</span> <span class="nav-text">Agent相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HuggingFace-Agent"><span class="nav-number">2.1.</span> <span class="nav-text">HuggingFace Agent</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E9%80%9A%E4%B9%89%E5%8D%83%E9%97%AE%E4%BD%9C%E4%B8%BAAgent"><span class="nav-number">2.1.1.</span> <span class="nav-text">使用通义千问作为Agent</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">安装依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9E%84%E5%BB%BAQWenAgent"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">构建QWenAgent</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tools"><span class="nav-number">2.1.2.</span> <span class="nav-text">Tools</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Tools%E6%94%AF%E6%8C%81"><span class="nav-number">2.1.2.1.</span> <span class="nav-text">Tools支持</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tools%E6%A8%A1%E5%9E%8B%E9%83%A8%E7%BD%B2"><span class="nav-number">2.1.3.</span> <span class="nav-text">Tools模型部署</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ReAct"><span class="nav-number">2.2.</span> <span class="nav-text">ReAct</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ReAct-Prompting-%E7%A4%BA%E4%BE%8B"><span class="nav-number">2.2.1.</span> <span class="nav-text">ReAct Prompting 示例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E6%9C%ACEmbedding"><span class="nav-number">3.</span> <span class="nav-text">文本Embedding</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#FlagEmbedding%EF%BC%88%E6%99%BA%E6%BA%90%EF%BC%89"><span class="nav-number">3.1.</span> <span class="nav-text">FlagEmbedding（智源）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Model-List"><span class="nav-number">3.1.0.1.</span> <span class="nav-text">Model List</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-1"><span class="nav-number">3.1.0.2.</span> <span class="nav-text">使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%84%E4%BC%B0"><span class="nav-number">3.1.0.3.</span> <span class="nav-text">评估</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%AD%E7%BB%83"><span class="nav-number">3.1.0.4.</span> <span class="nav-text">训练</span></a></li></ol></li></ol></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2023 Yujie&#39;s Blog All Rights Reserved.
+          
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+
+<!-- Custome JS -->
+
+<script src="/js/my.js"></script>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/scripts.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+</body>
+</html>
